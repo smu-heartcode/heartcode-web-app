@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
       </Head>
       <div>
         <Header />
-        <main className="px-10">{children}</main>
+        <main>{children}</main>
       </div>
     </>
   );

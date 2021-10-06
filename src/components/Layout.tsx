@@ -1,8 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Header from "./Header";
-import Footer from "./Footer";
-
 interface LayoutProps {
   pageTitle: string;
 }
@@ -15,8 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
       </Head>
       <div>
         <Header />
-        <main>{children}</main>
-        <Footer />
+        <main className="px-10">{children}</main>
       </div>
     </>
   );

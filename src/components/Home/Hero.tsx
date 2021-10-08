@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
       <div className="text-center">
         <h4 className="text-2xl">An Initiative by SMU Ellipsis</h4>
         <h2 className="text-6xl font-bold my-8">Project Heartcode</h2>
-        <p className="text-lg px-72">
+        <p className="text-lg px-72 mb-24">
           A community service project organised by Singapore Management
           University, School of Information Systems. Project HeartCode serves to
           provide less privileged youths the opportunity to explore their

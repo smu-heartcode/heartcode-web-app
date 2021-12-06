@@ -39,11 +39,11 @@ const Header: React.FC<HeaderProps> = () => {
               </a>
             </Link>
 
-            <Link href="/year">
+            {/* <Link href="/year">
               <a className="lg:inline-flex lg:w-auto px-3 py-2 rounded transition duration-400 ease-in-out hover:bg-gray-300">
                 Previous Runs
               </a>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </header>

@@ -1,0 +1,1 @@
+{"version":"0.1.0","name":"heartcode-web-app","dependencies":{"@headlessui/react":{"version":"1.4.2"},"embla-carousel-react":{"version":"5.0.1"},"next":{"version":"12.0.7"},"react-dom":{"version":"17.0.2"},"react-icons":{"version":"4.3.1"},"react":{"version":"17.0.2"},"styled-components":{"version":"5.3.3"},"twin.macro":{"version":"2.8.1"}}}

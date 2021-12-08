@@ -11,7 +11,7 @@ const Header: React.FC<HeaderProps> = () => {
 
   return (
     <>
-      <header className="flex items-center py-2 px-10 flex-wrap bg-white text-black">
+      <header className="flex items-center py-2 px-10 flex-wrap bg-milk text-black">
         <div
           className="lg:text-xl py-2 inline-flex items-center font-bold"
         >
@@ -39,11 +39,11 @@ const Header: React.FC<HeaderProps> = () => {
               </a>
             </Link>
 
-            <Link href="/year">
+            {/* <Link href="/year">
               <a className="lg:inline-flex lg:w-auto px-3 py-2 rounded transition duration-400 ease-in-out hover:bg-gray-300">
                 Previous Runs
               </a>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </header>

@@ -82,7 +82,7 @@ const Home = () => {
               {Object.values(categories).map((posts, idx) => (
                 <Tab.Panel key={idx} className={classNames("p-3")}>
                   {posts.map((post, i) => (
-                    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                    <div key={i} className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
                       <Icon from={`from-${post.color}-${200}`} to={`to-${post.color}-300`}>
                         {post.icon}
                       </Icon>

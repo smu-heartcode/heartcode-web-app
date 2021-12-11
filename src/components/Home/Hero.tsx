@@ -1,12 +1,13 @@
 import React from "react";
 
+import Image from "next/image"
 import hero from "../../assets/hero.png";
 
 const Hero: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center bg-milk mb-8">
-      <div className="w-3/5 -mt-16">
-        <img src={hero.src} className="object-cover h-1/3" alt="Hero" />
+      <div className="w-3/5">
+        <Image src={hero.src} height={800} width={1200} priority={true} className="object-cover text-center" alt="Hero" />
       </div>
       <div className="text-center">
         <h4 className="text-2xl text-pink-400">An Initiative by SMU Ellipsis</h4>

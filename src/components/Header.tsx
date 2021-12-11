@@ -11,9 +11,9 @@ const Header: React.FC<HeaderProps> = () => {
 
   return (
     <>
-      <header className="flex items-center py-2 px-10 flex-wrap bg-milk text-black">
+      <header className="flex items-center py-2 px-20 flex-wrap bg-milk text-black">
         <div
-          className="lg:text-xl py-2 inline-flex items-center font-bold"
+          className="lg:text-xl py-2 inline-flex items-center font-bold cursor-pointer"
         >
           <Link href="/">
             <img className="h-12" src={Logo.src} alt="SMU Project Heartcode" />

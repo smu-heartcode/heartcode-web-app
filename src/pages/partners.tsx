@@ -7,7 +7,7 @@ interface partnerProps {}
 const Partners: React.FC<partnerProps> = () => {
   return (
     <Layout pageTitle="Partners">
-      <div className="min-h-screen px-24 py-12 bg-milk">
+      <div className="min-h-screen px-20 py-24 bg-milk">
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-pink-400 sm:text-5xl sm:leading-none">
           Our{" "}
           <span className="relative px-1">

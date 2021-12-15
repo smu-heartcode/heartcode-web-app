@@ -23,9 +23,9 @@ const Sponsors: React.FC = () => {
     <>
       <div className="grid gap-10 lg:grid-cols-2">
         {partners.map((partner) => (
-          <div className="grid sm:grid-cols-3">
+          <div key={partner.name} className="grid sm:grid-cols-3">
             <div className="relative w-full max-h-full sm:h-auto">
-              <Image className="rounded-full" src={partner.image} alt="Mr Ng Kai Wa" />
+              <Image className="rounded-full" src={partner.image} />
             </div>
             <div className="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
               <p className="text-xl font-bold pb-1">{partner.name}</p>

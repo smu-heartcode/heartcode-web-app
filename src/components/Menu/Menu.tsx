@@ -2,13 +2,22 @@ import React from "react";
 import Link from "next/link";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 import { MenuToggle } from "./MenuToggle";
-import { IoMdHome, IoMdPeople, IoMdHeart } from "react-icons/io";
+import yearData from "../../components/Years/yearData";
+import { IoMdHome, IoMdPeople } from "react-icons/io";
+import { BsBookmarkHeartFill } from "react-icons/bs";
 
 const links = [
   { id: 1, name: "Home", to: "/", icon: <IoMdHome size={25} />, color: "pink" },
-  { id: 2, name: "Partners", to: "/partners", icon: <IoMdPeople size={25} />, color: "green" },
-  { id: 3, name: "Previous Runs", to: "/year", icon: <IoMdHeart size={25} />, color: "blue"},
+  {
+    id: 2,
+    name: "Partners",
+    to: "/partners",
+    icon: <IoMdPeople size={25} />,
+    color: "green",
+  },
 ];
+
+const years = Object.keys(yearData).reverse();
 
 const itemVariants = {
   closed: {
@@ -20,13 +29,13 @@ const itemVariants = {
 const sideVariants = {
   closed: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.05,
       staggerDirection: -1,
     },
   },
   open: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.05,
       staggerDirection: 1,
     },
   },
@@ -61,12 +70,15 @@ const Menu: React.FC = () => {
           }}
         >
           <motion.div
-            className="flex flex-col h-1/3 justify-center"
+            className="flex flex-col h-full justify-start mt-8"
             initial="closed"
             animate="open"
             exit="closed"
             variants={sideVariants}
           >
+            <div className="text-sm pl-5 h-8 font-light tracking-wide text-gray-500">
+              Menu
+            </div>
             {links.map(({ id, name, to, icon, color }) => (
               <motion.div
                 key={id}
@@ -74,9 +86,36 @@ const Menu: React.FC = () => {
                 className={`hover:bg-${color}-200 transform duration-200 ease-in-out h-12 flex items-center justify-center`}
               >
                 <Link href={to}>
-                  <div className={`text-${color}-600 w-full pl-5 flex flex-row items-center cursor-pointer`}>
-                    <div className="inline-flex items-center justify-center mr-3">{icon}</div>
-                    <div className="text-sm font-bold">{name}</div>
+                  <div
+                    className={`text-${color}-700 w-full pl-5 flex flex-row items-center cursor-pointer`}
+                    onClick={() => toggleOpen()}
+                  >
+                    <div className="inline-flex items-center justify-center mr-3">
+                      {icon}
+                    </div>
+                    <div className="text-sm font-black">{name}</div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+            <div className="text-sm pl-5 py-3 font-light tracking-wide text-gray-500">
+              Previous Runs
+            </div>
+            {years.map((year) => (
+              <motion.div
+                key={year}
+                variants={itemVariants}
+                className={`hover:bg-blue-200 transform duration-200 ease-in-out h-12 flex items-center justify-center`}
+              >
+                <Link href={`/runs/${year}`}>
+                  <div
+                    className={`text-blue-700 w-full pl-5 flex flex-row items-center cursor-pointer`}
+                    onClick={() => toggleOpen()}
+                  >
+                    <div className="inline-flex items-center justify-center mr-4">
+                      <BsBookmarkHeartFill size={20} />
+                    </div>
+                    <div className="text-sm font-black">{year} Run</div>
                   </div>
                 </Link>
               </motion.div>

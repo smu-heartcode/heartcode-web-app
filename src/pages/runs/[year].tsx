@@ -67,7 +67,7 @@ const Year: NextPage<YearProps> = () => {
                         <div className="relative w-full max-h-full sm:h-auto">
                           <Image
                             className="rounded-full"
-                            src={`/${year}/${b.image}`}
+                            src={`/${year}/Beneficiaries/${b.image}`}
                             width="250"
                             height="250"
                           />
@@ -76,9 +76,6 @@ const Year: NextPage<YearProps> = () => {
                           <p className="text-xl font-bold pb-1">
                             {b.organisation}
                           </p>
-                          <p className="mb-4 text-sm tracking-wide">
-                            {b.description}
-                          </p>
                         </div>
                       </div>
                     </div>
@@ -87,33 +84,40 @@ const Year: NextPage<YearProps> = () => {
               </Tab.Panel>
               <Tab.Panel>
                 <div className="grid gap-10 lg:grid-cols-3">
-                  {projects.map((p, i) => (
+                  
+                  {projects.length > 0 ? projects.map((p, i) => (
                     <div key={`p.mentee_${i}`}>
-                      <h3 className="text-xl font-black">{p.name}</h3>
-                      <div className="relative w-full max-h-full sm:h-auto my-5">
+                      <h3 className="text-xl font-black pb-3 text-pink-600">{p.name}</h3>
+                      <a href={p.url} className="relative w-full max-h-full sm:h-auto my-5" target="_blank">
+
                         <Image
-                          src={`/${year}/${p.thumbnail}`}
+                          src={`/${year}/Projects/${p.thumbnail}`}
+                          className="transition transform hover:scale-110 duration-200 ease-in-out"
                           width="500"
                           height="250"
                         />
-                      </div>
-                      <div className="flex flex-col font-bold text-md">
+                      </a>
+                      <div className="flex flex-col font-bold text-lg text-gray-700 pt-3">
                         <h3>Mentee: {p.mentee}</h3>
                         <h3>Mentor: {p.mentor}</h3>
                       </div>
                     </div>
-                  ))}
+                  )) : (
+                    <div>
+                      <h3 className="text-xl font-black">No available projects</h3>
+                    </div>
+                  )}
                 </div>
               </Tab.Panel>
               <Tab.Panel>
-                <div className="grid gap-10 lg:grid-cols-3">
+                <div className="grid gap-10 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
                   {orgComm.map((o, i) => (
                     <div key={`o.name_${i}`}>
                       <div className="flex flex-col font-bold text-md text-center">
                         <div className="rounded-full mb-6">
                         <Image
                           className="rounded-full"
-                          src={`/${year}/${o.image}`}
+                          src={`/${year}/OrgComm/${o.image}`}
                           height="250"
                           width="250"
                         />

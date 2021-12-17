@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import media4 from "../../assets/media-4.jpeg"
-import media5 from "../../assets/media-5.jpeg"
+import hc11 from "../../assets/hc11.png"
+import hc12 from "../../assets/hc12.png"
 
 
 const StoryImageBlock: React.FC  = () => {
@@ -9,17 +9,17 @@ const StoryImageBlock: React.FC  = () => {
     <div className="grid grid-cols-2 gap-5">
     <Image
       className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
-      src={media4}
+      src={hc11}
       alt=""
     />
     <Image
       className="object-cover w-full h-48 rounded shadow-lg"
-      src={media5}
+      src={hc12}
       alt=""
     />
     <Image
       className="object-cover w-full h-48 rounded shadow-lg"
-      src={media4}
+      src={hc11}
       alt=""
     />
   </div>

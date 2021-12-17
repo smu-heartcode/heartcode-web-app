@@ -1,6 +1,8 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
+import { PrevButton, NextButton } from "./EmblaCarouselButton";
+import Autoplay from "embla-carousel-autoplay";
 
 import { mediaByIndex } from "./mediaByIndex";
 import styles from "./Carousel.module.css";
@@ -11,16 +13,35 @@ const SLIDE_COUNT = 10;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
 const Carousel: React.FC<CarouselProps> = () => {
-  const [viewportRef, embla] = useEmblaCarousel({
-    containScroll: "trimSnaps",
-    dragFree: true,
-  });
+  const autoplay = useRef(
+    Autoplay(
+      { delay: 3000, stopOnInteraction: false },
+      (emblaRoot) => emblaRoot.parentElement
+    )
+  );
+
+  const [viewportRef, embla] = useEmblaCarousel(
+    {
+      containScroll: "trimSnaps",
+      dragFree: true,
+    },
+    [autoplay.current]
+  );
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
 
-  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
-  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
+  const scrollNext = useCallback(() => {
+    if (!embla) return;
+    embla.scrollNext();
+    autoplay.current.reset();
+  }, [embla]);
+
+  const scrollPrev = useCallback(() => {
+    if (!embla) return;
+    embla.scrollPrev();
+    autoplay.current.reset();
+  }, [embla]);
 
   const onSelect = useCallback(() => {
     if (!embla) return;
@@ -53,15 +74,14 @@ const Carousel: React.FC<CarouselProps> = () => {
                   <Image
                     className={styles.embla__slide__img}
                     src={mediaByIndex(index)}
-                    alt="A cool cat."
                   />
                 </div>
               </div>
             ))}
           </div>
+          <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
+          <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
         </div>
-        {/* <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-        <NextButton onClick={scrollNext} enabled={nextBtnEnabled} /> */}
       </div>
       <div className={styles.embla__progress}>
         <div

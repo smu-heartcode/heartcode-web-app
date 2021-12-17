@@ -75,7 +75,7 @@ const yearData: YearMap = {
       {
         name: "Reyna Yeo",
         role: "Operations/Finance",
-        image: "Reyna.jpeg",
+        image: "reyna.jpg",
       },
       {
         name: "Sean Choon",

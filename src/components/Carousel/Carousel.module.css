@@ -39,7 +39,7 @@
 .embla__slide__inner {
   position: relative;
   overflow: hidden;
-  height: 190px;
+  height: 300px;
 }
 
 .embla__slide__img {
@@ -79,11 +79,11 @@
   height: 100%;
 }
 
-.embla__button--prev {
+.embla__button__prev {
   left: 27px;
 }
 
-.embla__button--next {
+.embla__button__next {
   right: 27px;
 }
 

@@ -87,7 +87,7 @@ const Home = () => {
                         {post.icon}
                       </Icon>
                       <div className="grid gap-10 lg:grid-cols-2">
-                        <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+                        <div className="flex flex-col justify-start md:pr-8 xl:pr-0 lg:max-w-lg">
                           <div className="max-w-xl mb-6">
                             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-pink-400 sm:text-5xl sm:leading-none">
                               Our{" "}

@@ -11,8 +11,10 @@
   "dependencies": {
     "@headlessui/react": "^1.4.2",
     "@types/react-dom": "^17.0.11",
-    "embla-carousel-react": "^5.0.1",
+    "embla-carousel-autoplay": "^6.0.2",
+    "embla-carousel-react": "^6.0.2",
     "framer-motion": "^5.4.5",
+    "lodash": "^4.17.21",
     "next": "^12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -21,6 +23,7 @@
     "twin.macro": "^2.7.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.178",
     "@types/react": "17.0.19",
     "@types/styled-components": "^5.1.14",
     "autoprefixer": "^10.3.7",

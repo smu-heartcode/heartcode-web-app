@@ -1,29 +1,17 @@
-import React from 'react'
-import Image from 'next/image'
-import hc11 from "../../assets/hc11.png"
-import hc12 from "../../assets/hc12.png"
+import React from "react";
+import Image from "next/image";
+import story from "../../assets/story.jpg";
 
-
-const StoryImageBlock: React.FC  = () => {
+const StoryImageBlock: React.FC = () => {
   return (
-    <div className="grid grid-cols-2 gap-5">
-    <Image
-      className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
-      src={hc11}
-      alt=""
-    />
-    <Image
-      className="object-cover w-full h-48 rounded shadow-lg"
-      src={hc12}
-      alt=""
-    />
-    <Image
-      className="object-cover w-full h-48 rounded shadow-lg"
-      src={hc11}
-      alt=""
-    />
-  </div>
-  )
-}
+    <div className="flex flex-col justify-center items-center">
+      <Image
+        className="object-cover w-full h-56 rounded shadow-lg"
+        src={story}
+        alt="Our Story"
+      />
+    </div>
+  );
+};
 
-export default StoryImageBlock
+export default StoryImageBlock;

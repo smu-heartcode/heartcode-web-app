@@ -1,14 +1,14 @@
 import React from "react";
 import Image from 'next/image'
-import media1 from "../../assets/media-1.jpeg"
+import vision from "../../assets/vision.png"
 
 const VisionImageBlock: React.FC = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center">
       <Image
-        className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-        src={media1}
-        alt=""
+        className="object-cover w-full h-56 rounded shadow-lg"
+        src={vision}
+        alt="Our Story"
       />
     </div>
   );

@@ -58,7 +58,7 @@ const Home = () => {
       <Hero />
       <Carousel />
       <div className="px-28 py-8 mt-20 bg-gray-100">
-        <div className="w-full max px-2 -mt-14 sm:px-0">
+        <div className="w-full px-2 -mt-14 sm:px-0">
           <Tab.Group>
             <Tab.List className="flex p-1 max-w-3xl mx-auto space-x-1 bg-pink-100 rounded-xl">
               {Object.keys(categories).map((category) => (
@@ -82,7 +82,7 @@ const Home = () => {
               {Object.values(categories).map((posts, idx) => (
                 <Tab.Panel key={idx} className={classNames("p-3")}>
                   {posts.map((post, i) => (
-                    <div key={i} className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                    <div key={i} className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
                       <Icon from={`from-${post.color}-${200}`} to={`to-${post.color}-300`}>
                         {post.icon}
                       </Icon>

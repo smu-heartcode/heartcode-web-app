@@ -20,8 +20,11 @@ const Footer: React.FC<FooterProps> = () => {
               <Image src={SMU} className="inline-flex items-center" />
             </div>
             <div className="mt-6 lg:max-w-sm tracking-wide">
-              <p className="text-sm font-black">
+              <p className="text-sm font-black pb-1">
                 SMU School of Computing and Information Systems
+              </p>
+              <p className="text-sm font-black">
+                SMU Centre for Social Responsibility (C4SR)
               </p>
               <p className="mt-4 text-sm font-black text-gray-800">
                 Singapore Management University <br />

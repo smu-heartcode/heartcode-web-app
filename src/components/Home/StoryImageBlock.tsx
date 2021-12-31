@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import story from "../../assets/story.jpg";
+import story from "/public/static/story.jpg";
 
 const StoryImageBlock: React.FC = () => {
   return (

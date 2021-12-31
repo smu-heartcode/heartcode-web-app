@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image'
-import mission from "../../assets/mission.jpg"
+import mission from "/public/static/mission.jpg"
 
 const MissionImageBlock: React.FC = () => {
   return (

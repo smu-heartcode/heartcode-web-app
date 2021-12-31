@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import NKW from "../../assets/MrNg.png";
-import CDC from "../../assets/CDC_Logo.png";
+import NKW from "/public/static/MrNg.png";
+import CDC from "/public/static/CDC_Logo.png";
 
 const Sponsors: React.FC = () => {
   const partners = [

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image'
-import vision from "../../assets/vision.png"
+import vision from "/public/static/vision.png"
 
 const VisionImageBlock: React.FC = () => {
   return (

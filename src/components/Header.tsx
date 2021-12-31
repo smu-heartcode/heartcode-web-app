@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import Logo from "../assets/Logo.png";
+import Logo from "/public/static/Logo.png";
 import Menu from "./Menu/Menu";
 
 interface HeaderProps {}

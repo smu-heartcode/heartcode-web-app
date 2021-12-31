@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import SMU from "../assets/smu.png";
+import SMU from "/public/static/smu.png";
 import {
   AiFillInstagram,
   AiFillFacebook,

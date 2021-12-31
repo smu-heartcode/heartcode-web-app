@@ -26,7 +26,7 @@ const Home = () => {
         image: <StoryImageBlock />,
         color: "green",
         description:
-          "Started by two alumni of the Singapore Management University (SMU) School of Computing and Information Systems (SCIS), Project HeartCode was an idea born from identifying the need to provide equal opportunity for individuals to learn about technology and programming, especially among underprivileged youths in Singapore. Project HeartCode recognises the ever increasing difficulties faced by families from underprivileged backgrounds, especially when raising their children. Although basic education is relatively accessible in Singapore, students from lower income backgrounds might have less exposure to various extra-curricular education as compared to their more fortunate counterparts.",
+          "First started by two alumni of the Singapore Management University (SMU) School of Computing and Information Systems (SCIS), Zul Yang Guo Qiang and Manfred Loh Pei En, Project HeartCode was an idea born from identifying the need to provide equal opportunity for individuals to learn about technology and programming, especially among underprivileged youths in Singapore. Project HeartCode recognises the ever increasing difficulties faced by families from underprivileged backgrounds, especially when raising their children. Although basic education is relatively accessible in Singapore, students from lower income backgrounds might have less exposure to various extra-curricular education as compared to their more fortunate counterparts.",
       },
     ],
     "Our Mission": [

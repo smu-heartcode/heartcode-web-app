@@ -17,12 +17,17 @@ interface ProjectItems {
   thumbnail: string; // Thumbnail of website (screenshot of landing)
 }
 
+interface PhotoItems {
+  name: string; // Name of Photo
+}
+
 interface YearMap {
   [year: string]: {
     description: string;
     beneficiaries: Array<BeneficiaryItems>;
     orgComm: Array<OrgCommItems>;
     projects: Array<ProjectItems>;
+    photos: Array<PhotoItems>;
   };
 }
 
@@ -225,6 +230,7 @@ const yearData: YearMap = {
         thumbnail: "guangqi_songhui.png",
       },
     ],
+    photos: [],
   },
   "2020": {
     description:
@@ -424,6 +430,7 @@ const yearData: YearMap = {
         thumbnail: "placeholder.png",
       },
     ],
+    photos: [],
   },
   "2019": {
     description:
@@ -595,6 +602,7 @@ const yearData: YearMap = {
         thumbnail: "xueen_xiaoyue.png",
       },
     ],
+    photos: [],
   },
   "2018": {
     description:
@@ -643,6 +651,7 @@ const yearData: YearMap = {
       },
     ],
     projects: [],
+    photos: [],
   },
   "2017": {
     description:
@@ -685,7 +694,8 @@ const yearData: YearMap = {
         image: "profilePlaceholder.jpeg",
       },
     ],
-    projects: []
+    projects: [],
+    photos: [],
   },
 };
 

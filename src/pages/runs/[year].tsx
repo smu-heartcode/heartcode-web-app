@@ -18,10 +18,10 @@ const Year: NextPage<YearProps> = () => {
   const router = useRouter();
   const { year } = router.query;
 
-  const { description, beneficiaries, orgComm, projects } =
+  const { description, beneficiaries, orgComm, projects, photos } =
     yearData[String(year)];
 
-  const tabs = ["Beneficiaries", "Projects", "Org Comm"];
+  const tabs = ["Beneficiaries", "Projects", "Org Comm", "Photos"];
 
   return (
     <Layout pageTitle={`${year} HeartCode Run`}>
@@ -84,27 +84,35 @@ const Year: NextPage<YearProps> = () => {
               </Tab.Panel>
               <Tab.Panel>
                 <div className="grid gap-10 lg:grid-cols-3">
-                  
-                  {projects.length > 0 ? projects.map((p, i) => (
-                    <div key={`p.mentee_${i}`}>
-                      <h3 className="text-xl font-black pb-3 text-pink-600">{p.name}</h3>
-                      <a href={p.url} className="relative w-full max-h-full sm:h-auto my-5" target="_blank">
-
-                        <Image
-                          src={`/${year}/Projects/${p.thumbnail}`}
-                          className="transition transform hover:scale-110 duration-200 ease-in-out"
-                          width="500"
-                          height="250"
-                        />
-                      </a>
-                      <div className="flex flex-col font-bold text-lg text-gray-700 pt-3">
-                        <h3>Mentee: {p.mentee}</h3>
-                        <h3>Mentor: {p.mentor}</h3>
+                  {projects.length > 0 ? (
+                    projects.map((p, i) => (
+                      <div key={`p.mentee_${i}`}>
+                        <h3 className="text-xl font-black pb-3 text-pink-600">
+                          {p.name}
+                        </h3>
+                        <a
+                          href={p.url}
+                          className="relative w-full max-h-full sm:h-auto my-5"
+                          target="_blank"
+                        >
+                          <Image
+                            src={`/${year}/Projects/${p.thumbnail}`}
+                            className="transition transform hover:scale-110 duration-200 ease-in-out"
+                            width="500"
+                            height="250"
+                          />
+                        </a>
+                        <div className="flex flex-col font-bold text-lg text-gray-700 pt-3">
+                          <h3>Mentee: {p.mentee}</h3>
+                          <h3>Mentor: {p.mentor}</h3>
+                        </div>
                       </div>
-                    </div>
-                  )) : (
+                    ))
+                  ) : (
                     <div>
-                      <h3 className="text-xl font-black">No available projects</h3>
+                      <h3 className="text-xl font-black">
+                        No projects available 😖
+                      </h3>
                     </div>
                   )}
                 </div>
@@ -115,18 +123,40 @@ const Year: NextPage<YearProps> = () => {
                     <div key={`o.name_${i}`}>
                       <div className="flex flex-col font-bold text-md text-center">
                         <div className="rounded-full mb-6">
-                        <Image
-                          className="rounded-full"
-                          src={`/${year}/OrgComm/${o.image}`}
-                          height="250"
-                          width="250"
-                        />
+                          <Image
+                            className="rounded-full"
+                            src={`/${year}/OrgComm/${o.image}`}
+                            height="250"
+                            width="250"
+                          />
                         </div>
                         <h3>{o.name}</h3>
                         <h3>{o.role}</h3>
                       </div>
                     </div>
                   ))}
+                </div>
+              </Tab.Panel>
+              <Tab.Panel>
+                <div className="grid gap-10 lg:grid-cols-3">
+                  {photos.length > 0 ? (
+                    photos.map((p, i) => (
+                      <div key={`photo_${p.name + i}`}>
+                        <Image
+                          src={`/${year}/Projects/${p.name}`}
+                          className="transition transform hover:scale-110 duration-200 ease-in-out"
+                          width="500"
+                          height="250"
+                        />
+                      </div>
+                    ))
+                  ) : (
+                    <div>
+                      <h3 className="text-xl font-black">
+                        No photos available 😖
+                      </h3>
+                    </div>
+                  )}
                 </div>
               </Tab.Panel>
             </Tab.Panels>

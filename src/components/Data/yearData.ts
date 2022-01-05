@@ -1,12 +1,12 @@
 interface BeneficiaryItems {
   organisation: string; // Name of Beneficiary
-  image: string; // Their Image or Logo
+  image: string; // Their Image or Logo (path to directory)
 }
 
 interface OrgCommItems {
   name: string; // Name of Org Comm
   role: string; // Role of Org Comm
-  image: string; // Image of Org Comm
+  image: string; // Image of Org Comm (path to directory)
 }
 
 interface ProjectItems {
@@ -14,7 +14,7 @@ interface ProjectItems {
   mentee: string; // Mentee Name
   mentor: string; // Mentor Name
   url: string; // URL of website
-  thumbnail: string; // Thumbnail of website (screenshot of landing)
+  thumbnail: string; // Thumbnail of website (screenshot of landing) 
 }
 
 interface PhotoItems {

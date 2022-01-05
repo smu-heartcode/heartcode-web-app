@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { Tab } from "@headlessui/react";
 import Image from "next/image";
 
-import yearData from "../../components/Years/yearData";
+import yearData from "../../components/Data/yearData";
 
 import Layout from "../../components/Layout";
 

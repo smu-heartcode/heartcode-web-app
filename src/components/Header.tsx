@@ -9,7 +9,7 @@ interface HeaderProps {}
 const Header: React.FC<HeaderProps> = () => {
   return (
     <>
-      <header className="fixed left-0 right-0 px-4 py-5 mx-auto md:px-24 lg:px-12 z-50">
+      <header className="fixed left-0 right-0 px-4 py-4 mx-auto md:px-24 lg:px-12 z-50 bg-milk">
         <div className=" flex items-center justify-between">
           <div>
             <Link href="/">

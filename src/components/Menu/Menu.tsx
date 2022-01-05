@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 import { MenuToggle } from "./MenuToggle";
-import yearData from "../Data/yearData";
+import yearData from "../Data/yearData"
 import { IoMdHome, IoMdPeople } from "react-icons/io";
 import { BsBookmarkHeartFill } from "react-icons/bs";
 

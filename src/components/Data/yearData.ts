@@ -14,13 +14,14 @@ interface ProjectItems {
   mentee: string; // Mentee Name
   mentor: string; // Mentor Name
   url: string; // URL of website
-  thumbnail: string; // Thumbnail of website (screenshot of landing) 
+  thumbnail: string; // Thumbnail of website (screenshot of landing)
 }
 
 interface PhotoItems {
-  name: string; // Name of Photo
+  src: string; // src to the image (must use /year/Photos/img.jpg for this)
+  width: number; // aspect ratio
+  height: number; // aspect ratio
 }
-
 interface YearMap {
   [year: string]: {
     description: string;
@@ -222,7 +223,7 @@ const yearData: YearMap = {
         url: "https://heartcode.hanxingjian.com/Projects/Si%20Ying/index.html",
         thumbnail: "phoenikelly_siying.png",
       },
-            {
+      {
         name: "Depression",
         mentee: "Leong Song Hui",
         mentor: "Ong Guang Qi",
@@ -230,7 +231,93 @@ const yearData: YearMap = {
         thumbnail: "guangqi_songhui.png",
       },
     ],
-    photos: [],
+    photos: [
+      {
+        src: "/2021/Photos/1.png",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/2.png",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/3.png",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/4.png",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/5.png",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/6.png",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/7.png",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/8.png",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/9.png",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/10.png",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/11.png",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/12.png",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/13.png",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/14.png",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/15.png",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/16.png",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2021/Photos/17.png",
+        width: 4,
+        height: 2,
+      },
+    ],
   },
   "2020": {
     description:
@@ -430,7 +517,113 @@ const yearData: YearMap = {
         thumbnail: "placeholder.png",
       },
     ],
-    photos: [],
+    photos: [
+      {
+        src: "/2020/Photos/1.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/2.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/3.png",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/4.png",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/5.png",
+        width: 7,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/6.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/7.png",
+        width: 7,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/8.png",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/9.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/10.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/11.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/12.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/13.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/14.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/15.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/16.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/17.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/18.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/19.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/20.png",
+        width: 6,
+        height: 2,
+      },
+      {
+        src: "/2020/Photos/21.png",
+        width: 6,
+        height: 2,
+      },
+    ],
   },
   "2019": {
     description:
@@ -602,7 +795,123 @@ const yearData: YearMap = {
         thumbnail: "xueen_xiaoyue.png",
       },
     ],
-    photos: [],
+    photos: [
+      {
+        src: "/2019/Photos/1.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/2.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/3.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/4.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/5.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/6.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/7.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/8.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/9.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/10.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/11.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/12.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/13.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/14.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/15.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/16.jpg",
+        width: 5,
+        height: 3,
+      },
+      {
+        src: "/2019/Photos/17.jpg",
+        width: 6,
+        height: 3,
+      },
+      {
+        src: "/2019/Photos/18.jpg",
+        width: 6,
+        height: 3,
+      },
+      {
+        src: "/2019/Photos/19.jpg",
+        width: 3,
+        height: 3,
+      },
+      {
+        src: "/2019/Photos/20.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/21.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/22.jpg",
+        width: 3,
+        height: 2,
+      },
+      {
+        src: "/2019/Photos/23.jpg",
+        width: 3,
+        height: 2,
+      },
+    ],
   },
   "2018": {
     description:

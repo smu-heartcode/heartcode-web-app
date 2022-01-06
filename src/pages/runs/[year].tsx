@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import { useRouter } from "next/router";
 import { Tab } from "@headlessui/react";
 import Image from "next/image";
+import Gallery from "react-photo-gallery";
 
 import yearData from "../../components/Data/yearData";
 
@@ -109,11 +110,9 @@ const Year: NextPage<YearProps> = () => {
                       </div>
                     ))
                   ) : (
-                    <div>
-                      <h3 className="text-xl font-black">
-                        No projects available 😖
-                      </h3>
-                    </div>
+                    <h3 className="text-xl font-black">
+                      No projects available 😖
+                    </h3>
                   )}
                 </div>
               </Tab.Panel>
@@ -138,26 +137,11 @@ const Year: NextPage<YearProps> = () => {
                 </div>
               </Tab.Panel>
               <Tab.Panel>
-                <div className="grid gap-10 lg:grid-cols-3">
-                  {photos.length > 0 ? (
-                    photos.map((p, i) => (
-                      <div key={`photo_${p.name + i}`}>
-                        <Image
-                          src={`/${year}/Projects/${p.name}`}
-                          className="transition transform hover:scale-110 duration-200 ease-in-out"
-                          width="500"
-                          height="250"
-                        />
-                      </div>
-                    ))
-                  ) : (
-                    <div>
-                      <h3 className="text-xl font-black">
-                        No photos available 😖
-                      </h3>
-                    </div>
-                  )}
-                </div>
+                {photos.length > 0 ? (
+                  <Gallery photos={photos} />
+                ) : (
+                  <h3 className="text-xl font-black">No photos available 😖</h3>
+                )}
               </Tab.Panel>
             </Tab.Panels>
           </Tab.Group>

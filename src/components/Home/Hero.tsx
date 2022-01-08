@@ -1,30 +1,28 @@
 import React from "react";
-
 import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center pt-20 bg-milk mb-8">
-      <div className="w-3/5">
+      <div className="w-full lg:w-3/5">
         <Image
           src="/static/hero.png"
           height={800}
           width={1200}
           priority={true}
           loading="eager"
-          layout="responsive"
           className="object-cover text-center"
           alt="Hero"
         />
       </div>
       <div className="text-center">
-        <h4 className="text-2xl text-pink-400">
+        <h4 className="text-lg md:text-xl xl:text-2xl text-pink-400">
           An Initiative by SMU Ellipsis
         </h4>
-        <h2 className="text-6xl font-bold my-8 text-pink-300">
+        <h2 className="text-4xl md:text-5xl xl::text-6xl font-bold my-4 xl:my-8 text-pink-300">
           Project Heartcode
         </h2>
-        <p className="text-lg font-bold px-72 mb-8">
+        <p className="text-md md:text-lg font-bold px-20 xl:px-72 mb-8">
           A community service project organised by Singapore Management
           University, School of Computing and Information Systems. Project
           HeartCode serves to provide less privileged youths the opportunity to

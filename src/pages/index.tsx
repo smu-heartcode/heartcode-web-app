@@ -57,8 +57,8 @@ const Home = () => {
     <Layout pageTitle="Home">
       <Hero />
       <Carousel />
-      <div className="px-28 py-8 mt-20 bg-gray-100">
-        <div className="w-full px-2 -mt-14 sm:px-0">
+      <div className="px-7 xl:px-28 py-8 mt-20 bg-gray-100">
+        <div className="lg:w-full px-2 -mt-14 sm:px-0">
           <Tab.Group>
             <Tab.List className="flex p-1 max-w-3xl mx-auto space-x-1 bg-pink-100 rounded-xl">
               {Object.keys(categories).map((category) => (
@@ -66,7 +66,7 @@ const Home = () => {
                   key={category}
                   className={({ selected }) =>
                     classNames(
-                      "w-full py-2.5 text-xl leading-5 font-bold text-pink-500 rounded-lg",
+                      "w-full py-2.5 text-sm lg:text-xl leading-5 font-bold text-pink-500 rounded-lg",
                       "transition transform duration-200 ease-in-out",
                       selected
                         ? "bg-pink-200 shadow"
@@ -82,8 +82,14 @@ const Home = () => {
               {Object.values(categories).map((posts, idx) => (
                 <Tab.Panel key={idx} className={classNames("p-3")}>
                   {posts.map((post, i) => (
-                    <div key={i} className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
-                      <Icon from={`from-${post.color}-${200}`} to={`to-${post.color}-300`}>
+                    <div
+                      key={i}
+                      className="py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20"
+                    >
+                      <Icon
+                        from={`from-${post.color}-${200}`}
+                        to={`to-${post.color}-300`}
+                      >
                         {post.icon}
                       </Icon>
                       <div className="grid gap-10 lg:grid-cols-2">
@@ -92,7 +98,9 @@ const Home = () => {
                             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-pink-400 sm:text-5xl sm:leading-none">
                               Our{" "}
                               <span className="relative px-1">
-                                <div className={`absolute inset-x-0 bottom-0 h-2 transform -skew-x-12 bg-${post.color}-400`} />
+                                <div
+                                  className={`absolute inset-x-0 bottom-0 h-2 transform -skew-x-12 bg-${post.color}-400`}
+                                />
                                 <span className="relative inline-block">
                                   {post.title}
                                 </span>
@@ -103,7 +111,7 @@ const Home = () => {
                             </p>
                           </div>
                         </div>
-                        {post.image}
+                        <div className="hidden md:block">{post.image}</div>
                       </div>
                     </div>
                   ))}

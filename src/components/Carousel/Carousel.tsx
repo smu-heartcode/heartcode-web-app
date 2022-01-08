@@ -70,7 +70,7 @@ const Carousel: React.FC<CarouselProps> = () => {
           <div className={styles.embla__container}>
             {slides.map((index) => (
               <div className={styles.embla__slide} key={index}>
-                <div className={styles.embla__slide__inner}>
+                <div className={`${styles.embla__slide__inner} lg:h-96` }>
                   <Image
                     className={styles.embla__slide__img}
                     src={mediaByIndex(index)}

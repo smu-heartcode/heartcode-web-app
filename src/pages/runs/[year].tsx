@@ -26,7 +26,7 @@ const Year: NextPage<YearProps> = () => {
 
   return (
     <Layout pageTitle={`${year} HeartCode Run`}>
-      <div className="min-h-screen px-20 py-24 bg-milk">
+      <div className="min-h-screen px-12 lg:px-20 py-24 bg-milk">
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-pink-400 sm:text-5xl sm:leading-none">
           <span className="relative px-1">
             <div className="absolute inset-x-0 bottom-0 h-2 transform -skew-x-12 bg-yellow-500" />
@@ -36,10 +36,10 @@ const Year: NextPage<YearProps> = () => {
         </h2>
 
         <div>
-          <h3 className="font-bold text-lg pt-4 pb-8">{description}</h3>
+          <h3 className="font-bold text-md lg:text-lg pt-4 pb-8">{description}</h3>
         </div>
 
-        <div className="w-full max px-2 mt-6 sm:px-0">
+        <div className="w-full max mt-6">
           <Tab.Group>
             <Tab.List className="flex p-1 mx-auto space-x-1 bg-yellow-200 rounded-xl">
               {tabs.map((tab) => (
@@ -47,7 +47,7 @@ const Year: NextPage<YearProps> = () => {
                   key={tab}
                   className={({ selected }) =>
                     classNames(
-                      "w-full py-2.5 text-xl leading-5 font-bold text-yellow-500 rounded-lg",
+                      "w-full py-2.5 text-xs sm:text-sm md:text-base lg:text-xl leading-5 font-bold text-yellow-500 rounded-lg",
                       "transition transform duration-200 ease-in-out",
                       selected
                         ? "bg-yellow-300 shadow text-yellow-700"
@@ -64,7 +64,7 @@ const Year: NextPage<YearProps> = () => {
                 <div className="grid gap-10 lg:grid-cols-2">
                   {beneficiaries.map((b, i) => (
                     <div key={`b.organisation_${i}`}>
-                      <div className="grid sm:grid-cols-3">
+                      <div className="grid sm:grid-cols-3 text-center md:text-left">
                         <div className="relative w-full max-h-full sm:h-auto">
                           <Image
                             className="rounded-full"
@@ -74,7 +74,7 @@ const Year: NextPage<YearProps> = () => {
                           />
                         </div>
                         <div className="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
-                          <p className="text-xl font-bold pb-1">
+                          <p className="text-base md:text-xl font-bold pb-1">
                             {b.organisation}
                           </p>
                         </div>
@@ -110,7 +110,7 @@ const Year: NextPage<YearProps> = () => {
                       </div>
                     ))
                   ) : (
-                    <h3 className="text-xl font-black">
+                    <h3 className="text-base md:text-xl font-black">
                       No projects available 😖
                     </h3>
                   )}
@@ -140,7 +140,7 @@ const Year: NextPage<YearProps> = () => {
                 {photos.length > 0 ? (
                   <Gallery photos={photos} />
                 ) : (
-                  <h3 className="text-xl font-black">No photos available 😖</h3>
+                  <h3 className="text-base md:text-xl font-black">No photos available 😖</h3>
                 )}
               </Tab.Panel>
             </Tab.Panels>

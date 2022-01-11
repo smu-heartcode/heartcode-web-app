@@ -39,11 +39,13 @@
 .embla__slide__inner {
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .embla__slide__img {
   position: absolute;
-  display: block;
   width: auto;
   min-height: 100%;
   min-width: 100%;

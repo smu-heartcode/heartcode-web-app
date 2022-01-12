@@ -32,7 +32,7 @@ const Year: NextPage<YearProps> = () => {
             <div className="absolute inset-x-0 bottom-0 h-2 transform -skew-x-12 bg-yellow-500" />
             <span className="relative inline-block">{year}</span>
           </span>{" "}
-          HeartCode Run
+          HeartCode
         </h2>
 
         <div>

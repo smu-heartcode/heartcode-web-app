@@ -19,7 +19,7 @@ const Partners: React.FC<partnerProps> = () => {
           </span>
         </h2>
         <p className="font-bold text-lg pt-4 pb-8">
-          These are our current partners that is supporting Project HeartCode.
+          These are our current partners supporting Project HeartCode.
         </p>
 
         <div className="grid gap-10 lg:grid-cols-2">

@@ -35,7 +35,7 @@ interface YearMap {
 const yearData: YearMap = {
   "2021": {
     description:
-      "HeartCode 2021 was the fifth iteration of Project HeartCode led by Tian Le and Shao Hong. Due to COVID-19, the run continued to remain virtual, focusing on the same segments as the previous year - Digital Content Creation and Web Development",
+      "HeartCode 2021 was the fifth iteration of Project HeartCode led by Cheow Tian Le and Gan Shao Hong. Due to COVID-19, the run continued to remain virtual, focusing on the same segments as the previous year - Digital Content Creation and Web Development",
     beneficiaries: [
       {
         organisation: "Chinese Development Assistance Council (CDAC)",
@@ -627,7 +627,7 @@ const yearData: YearMap = {
   },
   "2019": {
     description:
-      "HeartCode 2019 was the third iteration of Project Heartcode, led by Mary and Bao Xian. The curriculum similarly adopted the Internet of Things (IoT) and Web Development segments of the previous year. Students then embark on exciting IoT projects that revolved around social issues",
+      "HeartCode 2019 was the third iteration of Project Heartcode, led by Mary Heng and Tsang Bao Xian. The curriculum similarly adopted the Internet of Things (IoT) and Web Development segments of the previous year. Students then embark on exciting IoT projects that revolved around social issues",
     beneficiaries: [
       {
         organisation: "Bendemeer Secondary School",
@@ -964,7 +964,7 @@ const yearData: YearMap = {
   },
   "2017": {
     description:
-      "HeartCode 2017 was the first ever iteration of the run, first started by two SCIS alumnis Zul Yang Guo Qiang and Manfred Loh Pei En. As the inaugural community service project under Ellipsis, Project HeartCode is the first of many different ways that will be dedicated to helping SMU SCIS students play a part in the community. HeartCode 2017 consist of a five-day web development course and at the end of the course, students are to create their own website through the skills learnt to create an informational web page showcaseing prevalent societal issues.",
+      "HeartCode 2017 was the first ever iteration of the project, first started by two SCIS alumnis Zul Yang Guo Qiang and Manfred Loh Pei En. As the inaugural community service project under Ellipsis, Project HeartCode is the first of many different ways that will be dedicated to helping SMU SCIS students play a part in the community. HeartCode 2017 consist of a five-day web development course and at the end of the course, students are to create their own website through the skills learnt to create an informational web page showcaseing prevalent societal issues.",
     beneficiaries: [
       {
         organisation: "Bukit Panjang Government High School",

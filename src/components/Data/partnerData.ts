@@ -14,7 +14,7 @@ const partnerData: partnerMap = {
     {
       name: "Mr Ng Kai Wa",
       image: "MrNg.png",
-      intro: "Chairman and CEO of InnoMedia Pte Ltd and Co-Founder/Independent Director of Creative Technology Ltd",
+      intro: "Chairman, CEO and Co-Founder of InnoMedia Pte Ltd”",
       description: "Mr Ng Kai Wa actively supports Project HeartCode not only by contributing to the project funds, but also through actively involving himself by advising each year's project leaders in the planning of the project",
     },
     {

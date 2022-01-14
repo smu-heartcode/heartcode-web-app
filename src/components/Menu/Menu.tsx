@@ -4,6 +4,7 @@ import { AnimatePresence, motion, useCycle } from "framer-motion";
 import { MenuToggle } from "./MenuToggle";
 import yearData from "../Data/yearData"
 import { IoMdHome, IoMdPeople, IoMdSchool } from "react-icons/io";
+import { RiArticleFill } from "react-icons/ri"
 import { BsBookmarkHeartFill } from "react-icons/bs";
 
 const links = [
@@ -23,11 +24,18 @@ const links = [
   },
   {
     id: 3,
+    name: "Blog",
+    to: "/blog",
+    icon: <RiArticleFill size={25} />,
+    color: "yellow"
+  },
+  {
+    id: 4,
     name: "Training",
     to: "https://heartcode.hanxingjian.com/",
     icon: <IoMdSchool size={25} />,
-    color: "yellow"
-  }
+    color: "purple"
+  },
 ];
 
 const years = Object.keys(yearData).reverse();

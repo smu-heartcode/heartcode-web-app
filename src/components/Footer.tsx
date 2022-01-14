@@ -68,7 +68,7 @@ const Footer: React.FC<FooterProps> = () => {
             </div>
             <p className="text-sm text-gray-600 flex items-center mt-1">
               <AiTwotoneMail size={20} className="inline mr-2" />
-              <p>
+              <span className="inline-block">
                 Get in touch with us via
                 <a
                   href="mailto:ellipsis@sa.smu.edu.sg?subject=Project Heartcode"
@@ -76,7 +76,7 @@ const Footer: React.FC<FooterProps> = () => {
                 >
                   ellipsis@sa.smu.edu.sg
                 </a>
-              </p>
+              </span>
             </p>
           </div>
         </div>

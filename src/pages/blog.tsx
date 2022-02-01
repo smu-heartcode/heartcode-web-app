@@ -38,7 +38,8 @@ const Blog: React.FC<BlogProps> = () => {
               <div className="sm:col-span-3 lg:col-span-2">
                 <div className="mb-3">
                   <a
-                    href="/"
+                    href={post.url}
+                    target="_blank"
                     aria-label="Article"
                     className="inline-block text-black transition-colors duration-200 hover:text-pink-400"
                   >

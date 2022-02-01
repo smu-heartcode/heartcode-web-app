@@ -29,7 +29,7 @@ const partnerData: partnerMap = {
       name: "Central Singapore CDC",
       image: "CDC_Logo.png",
       intro: "Partner of the Singapore Management University Centre for Social Responsibility",
-      description: "Central Singapore Community Development Counsil recognised Project HeartCode 2019's contribution to the Central Singapore district by involving beneficiaries from the district, and provided additional funding to support Project Heartcode in its efforts to upscale and improve the project",
+      description: "Central Singapore Community Development Council recognised Project HeartCode 2019's contribution to the Central Singapore district by involving beneficiaries from the district, and provided additional funding to support Project Heartcode in its efforts to upscale and improve the project",
     },
   ],
 };

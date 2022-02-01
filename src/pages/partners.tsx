@@ -27,7 +27,7 @@ const Partners: React.FC<partnerProps> = () => {
             <div key={partner.name} className="grid sm:grid-cols-3">
               <div className="relative w-full max-h-full sm:h-auto">
                 <Image
-                  className="rounded-full"
+                  className="rounded-full bg-white"
                   src={`/static/${partner.image}`}
                   height="250"
                   width="250"

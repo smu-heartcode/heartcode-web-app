@@ -196,11 +196,11 @@ const yearData: YearMap = {
         thumbnail: "caslyn_rain.png",
       },
       {
-        name: "Website Name",
+        name: "Cheerful Smiles",
         mentee: "Pei Joon Yi",
         mentor: "Jerome Goh",
-        url: "",
-        thumbnail: "placeholder.png",
+        url: "https://heartcode.hanxingjian.com/Projects/Joon%20yi/index.html",
+        thumbnail: "jerome_joonyi.png",
       },
       {
         name: "Dementia",

@@ -40,6 +40,7 @@ const Blog: React.FC<BlogProps> = () => {
                   <a
                     href={post.url}
                     target="_blank"
+                    rel="noreferrer"
                     aria-label="Article"
                     className="inline-block text-black transition-colors duration-200 hover:text-pink-400"
                   >

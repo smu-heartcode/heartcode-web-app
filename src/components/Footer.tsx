@@ -17,7 +17,7 @@ const Footer: React.FC<FooterProps> = () => {
         <div className="grid gap-8 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-3">
           <div className="sm:col-span-2">
             <div className="w-1/2 md:w-1/3 lg:w-1/4">
-              <Image src={SMU} className="inline-flex items-center" />
+              <Image src={SMU} className="inline-flex items-center" alt="SMU Logo" />
             </div>
             <div className="mt-6 lg:max-w-sm tracking-wide">
               <p className="text-sm font-black pb-1">
@@ -44,6 +44,7 @@ const Footer: React.FC<FooterProps> = () => {
               <a
                 href="https://www.instagram.com/smuheartcode/"
                 target="_blank"
+                rel="noreferrer"
                 className="text-gray-500 transition-colors duration-300 hover:text-pink-400"
               >
                 <AiFillInstagram size={30} />
@@ -51,6 +52,7 @@ const Footer: React.FC<FooterProps> = () => {
               <a
                 href="https://www.facebook.com/SMUProjectHeartCode/"
                 target="_blank"
+                rel="noreferrer"
                 className="text-gray-500 transition-colors duration-300 hover:text-pink-400"
               >
                 <AiFillFacebook size={30} />
@@ -58,6 +60,7 @@ const Footer: React.FC<FooterProps> = () => {
               <a
                 href="https://www.linkedin.com/company/smu-project-heartcode/about/"
                 target="_blank"
+                rel="noreferrer"
                 className="text-gray-500 transition-colors duration-300 hover:text-pink-400"
               >
                 <AiFillLinkedin size={30} />

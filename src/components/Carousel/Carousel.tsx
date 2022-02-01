@@ -74,6 +74,7 @@ const Carousel: React.FC<CarouselProps> = () => {
                   <Image
                     className={styles.embla__slide__img}
                     src={mediaByIndex(index)}
+                    alt="Photos of past runs"
                   />
                 </div>
               </div>

@@ -28,6 +28,7 @@ const Partners: React.FC<partnerProps> = () => {
               <div className="relative w-full max-h-full sm:h-auto">
                 <Image
                   className="rounded-full bg-white"
+                  alt="Logo of partner/beneficiary"
                   src={`/static/${partner.image}`}
                   height="250"
                   width="250"
@@ -64,6 +65,7 @@ const Partners: React.FC<partnerProps> = () => {
                 <Image
                   className="rounded-full"
                   src={`/static/${partner.image}`}
+                  alt="Logo of past partner/beneficiary"
                   height="250"
                   width="250"
                 />

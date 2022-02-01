@@ -106,7 +106,7 @@ const Menu: React.FC = () => {
                 variants={itemVariants}
                 className={`hover:bg-${color}-200 transform duration-200 ease-in-out h-12 flex items-center justify-center`}
               >
-                <Link href={to}>
+                <Link href={to} passHref>
                   <div
                     className={`text-${color}-700 w-full pl-5 flex flex-row items-center cursor-pointer`}
                     onClick={() => toggleOpen()}
@@ -128,7 +128,7 @@ const Menu: React.FC = () => {
                 variants={itemVariants}
                 className={`hover:bg-blue-200 transform duration-200 ease-in-out h-12 flex items-center justify-center`}
               >
-                <Link href={`/runs/${year}`}>
+                <Link href={`/runs/${year}`} passHref>
                   <div
                     className={`text-blue-700 w-full pl-5 flex flex-row items-center cursor-pointer`}
                     onClick={() => toggleOpen()}

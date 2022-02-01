@@ -69,6 +69,7 @@ const Year: NextPage<YearProps> = () => {
                           <Image
                             className="rounded-full"
                             src={`/${year}/Beneficiaries/${b.image}`}
+                            alt="Logo of beneficiary"
                             width="250"
                             height="250"
                           />
@@ -95,10 +96,12 @@ const Year: NextPage<YearProps> = () => {
                           href={p.url}
                           className="relative w-full max-h-full sm:h-auto my-5"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <Image
                             src={`/${year}/Projects/${p.thumbnail}`}
                             className="transition transform hover:scale-110 duration-200 ease-in-out"
+                            alt="Snapshot of mentee's project page"
                             width="500"
                             height="250"
                           />
@@ -125,6 +128,7 @@ const Year: NextPage<YearProps> = () => {
                           <Image
                             className="rounded-full"
                             src={`/${year}/OrgComm/${o.image}`}
+                            alt="Photo of Org Comm"
                             height="250"
                             width="250"
                           />

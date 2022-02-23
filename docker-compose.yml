@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  heartcode_web:
+    build: .
+    restart: always
+    ports:
+      - 12080:3000
+    

@@ -32,7 +32,7 @@ const links = [
   {
     id: 4,
     name: "Training",
-    to: "https://heartcode.hanxingjian.com/",
+    to: "https://projectheartcode.codes/",
     icon: <IoMdSchool size={25} />,
     color: "purple"
   },

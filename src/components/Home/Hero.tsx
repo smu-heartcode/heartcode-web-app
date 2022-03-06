@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
         <h2 className="text-4xl md:text-5xl xl::text-6xl font-bold my-4 xl:my-8 text-pink-300">
           Project Heartcode
         </h2>
-        <p className="text-md md:text-lg font-bold px-20 xl:px-72 mb-8">
+        <p className="text-md md:text-lg px-7 xl:px-72 mb-8">
           A community service project organised by Singapore Management
           University, School of Computing and Information Systems. Project
           HeartCode serves to provide less privileged youths the opportunity to

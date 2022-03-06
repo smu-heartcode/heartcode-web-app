@@ -114,12 +114,12 @@ const Menu: React.FC = () => {
                     <div className="inline-flex items-center justify-center mr-3">
                       {icon}
                     </div>
-                    <div className="text-sm font-black">{name}</div>
+                    <div className="text-sm font-medium">{name}</div>
                   </div>
                 </Link>
               </motion.div>
             ))}
-            <div className="text-sm pl-5 py-3 font-light tracking-wide text-gray-500">
+            <div className="text-sm pl-5 py-3 font-light tracking-wide text-gray-700">
               Previous Runs
             </div>
             {years.map((year) => (
@@ -136,7 +136,7 @@ const Menu: React.FC = () => {
                     <div className="inline-flex items-center justify-center mr-4">
                       <BsBookmarkHeartFill size={20} />
                     </div>
-                    <div className="text-sm font-black">{year} Run</div>
+                    <div className="text-sm font-medium">{year} Run</div>
                   </div>
                 </Link>
               </motion.div>

@@ -57,7 +57,7 @@ const Home = () => {
     <Layout pageTitle="Home">
       <Hero />
       <Carousel />
-      <div className="px-7 xl:px-28 py-8 mt-20 bg-gray-100">
+      <div className="px-2 xl:px-28 py-8 mt-20 bg-gray-100">
         <div className="lg:w-full px-2 -mt-14 sm:px-0">
           <Tab.Group>
             <Tab.List className="flex p-1 max-w-3xl mx-auto space-x-1 bg-pink-100 rounded-xl">
@@ -95,7 +95,7 @@ const Home = () => {
                       <div className="grid gap-10 lg:grid-cols-2">
                         <div className="flex flex-col justify-start md:pr-8 xl:pr-0 lg:max-w-lg">
                           <div className="max-w-xl mb-6">
-                            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-pink-400 sm:text-5xl sm:leading-none">
+                            <h2 className="max-w-lg mb-6 font-sans text-3xl font-semibold tracking-tight text-pink-400 sm:text-5xl sm:leading-none">
                               Our{" "}
                               <span className="relative px-1">
                                 <div

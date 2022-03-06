@@ -27,7 +27,7 @@ const Year: NextPage<YearProps> = () => {
   return (
     <Layout pageTitle={`${year} HeartCode Run`}>
       <div className="min-h-screen px-6 md:px-20 pt-20 md:pt-28 pb-8 bg-milk">
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-semibold tracking-tight text-pink-400 sm:text-5xl sm:leading-none">
+        <h2 className="max-w-lg mb-6 font-sans text-3xl font-medium tracking-tight text-pink-400 sm:text-5xl sm:leading-none">
           <span className="relative px-1">
             <div className="absolute inset-x-0 bottom-0 h-2 transform -skew-x-12 bg-yellow-500" />
             <span className="relative inline-block">{year}</span>

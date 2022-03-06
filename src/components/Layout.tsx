@@ -11,6 +11,7 @@ const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
     <>
       <Head>
         <title>{pageTitle}</title>
+        <link rel="icon" href="/static/favicon.ico" />
       </Head>
       <div>
         <Header />

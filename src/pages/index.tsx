@@ -57,7 +57,7 @@ const Home = () => {
     <Layout pageTitle="Home">
       <Hero />
       <Carousel />
-      <div className="px-2 xl:px-28 py-8 mt-20 bg-gray-100">
+      <div className="px-2 xl:px-28 pt-8 mt-20 bg-gray-100">
         <div className="lg:w-full px-2 -mt-14 sm:px-0">
           <Tab.Group>
             <Tab.List className="flex p-1 max-w-3xl mx-auto space-x-1 bg-pink-100 rounded-xl">

@@ -26,8 +26,8 @@ const Year: NextPage<YearProps> = () => {
 
   return (
     <Layout pageTitle={`${year} HeartCode Run`}>
-      <div className="min-h-screen px-12 lg:px-20 py-24 bg-milk">
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-pink-400 sm:text-5xl sm:leading-none">
+      <div className="min-h-screen px-6 md:px-20 pt-20 md:pt-28 pb-8 bg-milk">
+        <h2 className="max-w-lg mb-6 font-sans text-3xl font-semibold tracking-tight text-pink-400 sm:text-5xl sm:leading-none">
           <span className="relative px-1">
             <div className="absolute inset-x-0 bottom-0 h-2 transform -skew-x-12 bg-yellow-500" />
             <span className="relative inline-block">{year}</span>
@@ -36,7 +36,7 @@ const Year: NextPage<YearProps> = () => {
         </h2>
 
         <div>
-          <h3 className="font-bold text-md lg:text-lg pt-4 pb-8">{description}</h3>
+          <h3 className="text-md lg:text-lg pt-4 pb-8">{description}</h3>
         </div>
 
         <div className="w-full max mt-6">
@@ -47,7 +47,7 @@ const Year: NextPage<YearProps> = () => {
                   key={tab}
                   className={({ selected }) =>
                     classNames(
-                      "w-full py-2.5 text-xs sm:text-sm md:text-base lg:text-xl leading-5 font-bold text-yellow-500 rounded-lg",
+                      "w-full py-2.5 text-xs sm:text-sm md:text-base lg:text-xl leading-5 font-medium text-yellow-500 rounded-lg",
                       "transition transform duration-200 ease-in-out",
                       selected
                         ? "bg-yellow-300 shadow text-yellow-700"
@@ -75,7 +75,7 @@ const Year: NextPage<YearProps> = () => {
                           />
                         </div>
                         <div className="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
-                          <p className="text-base md:text-xl font-bold pb-1">
+                          <p className="text-base md:text-xl font-medium pb-1">
                             {b.organisation}
                           </p>
                         </div>
@@ -89,7 +89,7 @@ const Year: NextPage<YearProps> = () => {
                   {projects.length > 0 ? (
                     projects.map((p, i) => (
                       <div key={`p.mentee_${i}`}>
-                        <h3 className="text-xl font-black pb-3 text-pink-600">
+                        <h3 className="text-xl font-medium pb-3 text-pink-600">
                           {p.name}
                         </h3>
                         <a
@@ -106,14 +106,14 @@ const Year: NextPage<YearProps> = () => {
                             height="250"
                           />
                         </a>
-                        <div className="flex flex-col font-bold text-lg text-gray-700 pt-3">
+                        <div className="flex flex-col font-medium text-lg text-gray-700 pt-3">
                           <h3>Mentee: {p.mentee}</h3>
                           <h3>Mentor: {p.mentor}</h3>
                         </div>
                       </div>
                     ))
                   ) : (
-                    <h3 className="text-base md:text-xl font-black">
+                    <h3 className="text-base md:text-xl font-medium">
                       No projects available 😖
                     </h3>
                   )}
@@ -123,7 +123,7 @@ const Year: NextPage<YearProps> = () => {
                 <div className="grid gap-10 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
                   {orgComm.map((o, i) => (
                     <div key={`o.name_${i}`}>
-                      <div className="flex flex-col font-bold text-md text-center">
+                      <div className="flex flex-col font-medium text-md text-center">
                         <div className="rounded-full mb-6">
                           <Image
                             className="rounded-full"
@@ -144,7 +144,7 @@ const Year: NextPage<YearProps> = () => {
                 {photos.length > 0 ? (
                   <Gallery photos={photos} />
                 ) : (
-                  <h3 className="text-base md:text-xl font-black">No photos available 😖</h3>
+                  <h3 className="text-base md:text-xl font-medium">No photos available 😖</h3>
                 )}
               </Tab.Panel>
             </Tab.Panels>

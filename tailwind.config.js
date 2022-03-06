@@ -1,5 +1,11 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  safelist: [
+    {
+      pattern: /(from|to|bg|text)-(yellow|green|blue|purple|pink)-(|200|300|400)/, // matches all variants of the color
+      variants: ["hover"]
+    }
+  ],
   theme: {
     fontFamily: {
       sans: ["Poppins", "sans-serif"],

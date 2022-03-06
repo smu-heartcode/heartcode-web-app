@@ -11,7 +11,7 @@ const Blog: React.FC<BlogProps> = () => {
   return (
     <Layout pageTitle="Blog">
       <div className="min-h-screen px-6 md:px-20 pt-20 md:pt-28 pb-4 bg-milk">
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-semibold tracking-tight text-pink-400 sm:text-5xl sm:leading-none">
+        <h2 className="max-w-lg mb-6 font-sans text-3xl font-medium tracking-tight text-pink-400 sm:text-5xl sm:leading-none">
           Blog{" "}
           <span className="relative px-1">
             <div className="absolute inset-x-0 bottom-0 h-2 transform -skew-x-12 bg-pink-500" />
@@ -44,7 +44,7 @@ const Blog: React.FC<BlogProps> = () => {
                     aria-label="Article"
                     className="inline-block text-black transition-colors duration-200 hover:text-pink-400"
                   >
-                    <p className="text-2xl font-semibold leading-none sm:text-3xl xl:text-3xl">
+                    <p className="text-2xl font-medium leading-none sm:text-3xl xl:text-3xl">
                       {post.title}
                     </p>
                   </a>

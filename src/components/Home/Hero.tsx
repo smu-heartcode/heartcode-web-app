@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
         <h4 className="text-lg md:text-xl xl:text-2xl text-pink-400">
           An Initiative by SMU Ellipsis
         </h4>
-        <h2 className="text-4xl md:text-5xl xl::text-6xl font-semibold my-4 xl:my-8 text-pink-300">
+        <h2 className="text-4xl md:text-5xl xl::text-6xl font-medium my-4 xl:my-8 text-pink-300">
           Project Heartcode
         </h2>
         <p className="text-md md:text-lg px-7 xl:px-72 mb-8">

@@ -58,7 +58,7 @@ const Partners: React.FC<partnerProps> = () => {
           Partners that have worked with and supported Project HeartCode in the past.
         </p>
 
-        <div className="grid gap-10 lg:grid-cols-2">
+        <div className="grid gap-10 lg:grid-cols-2 text-center">
           {pastPartners.map((partner) => (
             <div key={partner.name} className="grid sm:grid-cols-3">
               <div className="relative w-full max-h-full sm:h-auto">

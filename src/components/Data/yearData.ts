@@ -91,13 +91,6 @@ const yearData: YearMap = {
     ],
     projects: [
       {
-        name: "Homosexuality",
-        mentee: "Pek Feng Yuan Jack",
-        mentor: "Tan Yi Peng",
-        url: "https://heartcode.hanxingjian.com/Projects/Pek%20Feng%20Yuan%20Jack/index.html",
-        thumbnail: "yipeng_jack.png",
-      },
-      {
         name: "Vision",
         mentee: "Dennis How Ming Xuan",
         mentor: "Sylvia Goh",
@@ -208,6 +201,13 @@ const yearData: YearMap = {
         mentor: "Louise Angeline Christie",
         url: "https://heartcode.hanxingjian.com/Projects/Pang%20Chi%20Ling/index.html",
         thumbnail: "angeline_chiling.png",
+      },
+      {
+        name: "Homosexuality",
+        mentee: "Pek Feng Yuan Jack",
+        mentor: "Tan Yi Peng",
+        url: "https://heartcode.hanxingjian.com/Projects/Pek%20Feng%20Yuan%20Jack/index.html",
+        thumbnail: "yipeng_jack.png",
       },
       {
         name: "Muscle Dystrophy",

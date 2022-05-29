@@ -10,7 +10,7 @@ const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
   return (
     <>
       <Head>
-        <title>{pageTitle}</title>
+        <title>Project HeartCode | {pageTitle}</title>
         <link rel="icon" href="/static/favicon.ico" />
       </Head>
       <div>

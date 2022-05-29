@@ -25,7 +25,7 @@ const Year: NextPage<YearProps> = () => {
   const tabs = ["Beneficiaries", "Projects", "Org Comm", "Photos"];
 
   return (
-    <Layout pageTitle={`${year} HeartCode Run`}>
+    <Layout pageTitle={`${year} Run`}>
       <div className="min-h-screen px-6 md:px-20 pt-20 md:pt-28 pb-8 bg-milk">
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-medium tracking-tight text-pink-400 sm:text-5xl sm:leading-none">
           <span className="relative px-1">

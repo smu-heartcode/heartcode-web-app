@@ -33,6 +33,303 @@ interface YearMap {
 }
 
 const yearData: YearMap = {
+  "2022": {
+    description:
+      "HeartCode 2022 goes back offline after 2 years! Project HeartCode 2022 was led by Euodia Tan and Goh Jia En. This run was focused on web development training and education on mental health issues.",
+    beneficiaries: [
+      {
+        organisation: "Chinese Development Assistance Council (CDAC)",
+        image: "CDAC.png",
+      },
+    ],
+    orgComm: [
+      {
+        name: "Euodia Tan Qiao Yue",
+        role: "Project Lead",
+        image: "euodia.jpg",
+      },
+      {
+        name: "Goh Jia En",
+        role: "Project Co-lead",
+        image: "jiaen.jpg",
+      },
+      {
+        name: "Seng Jun Yi",
+        role: "Trainer (Web Development)",
+        image: "junyi.jpg",
+      },
+      {
+        name: "Farand Tan Yong Rui",
+        role: "Trainer (Web Development)",
+        image: "farand.jpg",
+      },
+      {
+        name: "Jennifer Wang Xue’Er",
+        role: "Service Learning Director",
+        image: "jennifer.jpg",
+      },
+      {
+        name: "Maegan Chen Peralta",
+        role: "Marketing Director",
+        image: "maegan.jpg",
+      },
+      {
+        name: "Tan Yi Peng",
+        role: "Logistics & Finance Director",
+        image: "yipeng.jpg",
+      },
+      {
+        name: "Ng Yu Xin",
+        role: "Events Director",
+        image: "yuxin.jpeg",
+      },
+    ],
+    projects: [
+      {
+        name: "OCD",
+        mentee: "Chan Aley & Cheng Wilson",
+        mentor: "Melanie Poon & Joel Lim",
+        url: "https://joe-lfz.github.io/home.html",
+        thumbnail: "aley_wilson.jpg",
+      },
+      {
+        name: "Complete Compulsion",
+        mentee: "Mah Weng Kim & Tey Kai Feng",
+        mentor: "Sophia Chow Hui Ru & Malcolm Sim Jia Cheng",
+        url: "https://sophiaaachow.github.io/projectheartcode2022/",
+        thumbnail: "wengkim_kaifeng.jpg",
+      },
+      {
+        name: "What is Dementia?",
+        mentee: "Leong Eu Xay & Leong Jun Feng",
+        mentor: "Chow Jun Yong Jeremy & Tan Ding Xiang",
+        url: "https://e-say1.github.io/",
+        thumbnail: "euxay_junfeng.jpg",
+      },
+      {
+        name: "Learning ADHD",
+        mentee: "Poo Damien & Leong Jun Pu",
+        mentor: "Joshua Sumarlin & Sean Liew Zhi Xiong",
+        url: "snivy3636.github.io",
+        thumbnail: "damien_junpu.jpg",
+      },
+      {
+        name: "ADHD",
+        mentee: "Leong Charlene & Low Jonas",
+        mentor: "Renee Ng Bao Xuan & Nicholas Goh Bang Rui",
+        url: "https://xuanlene1709.github.io/",
+        thumbnail: "charlene_jonas.jpg",
+      },
+      {
+        name: "FXS",
+        mentee: "Ip Xu Zhe & Ng Elaine",
+        mentor: "Cheng Ying Xuan & Nicole Michaella Cuneta Daduya",
+        url: "https://yingxuan99.github.io/HeartCode_Mentees/index.html",
+        thumbnail: "xuzhe_elaine.jpg",
+      },
+      {
+        name: "Histrionic Personality Disorder",
+        mentee: "Ma Qijun & Ng Edric",
+        mentor: "Neo Jun Wei & Lim Huei Ming",
+        url: "https://edricleroy.github.io/projectheartcode/index.html",
+        thumbnail: "qijun_edric.jpg",
+      },
+      {
+        name: "Schizophrenia",
+        mentee: "Ng Javier & Lai Cornelius",
+        mentor: "Gordon Lim Yu Chen & Chai Yi Meng",
+        url: "https://corntanious.github.io/",
+        thumbnail: "javier_cornelius.jpg",
+      },
+      {
+        name: "What is Schizophrenia",
+        mentee: "Ng Meng Jit & Ngan Kwan Teng",
+        mentor: "Yue Zheng Ting & Yap Hong Xian",
+        url: "https://solkovo.github.io/",
+        thumbnail: "mengjit_kwanteng.jpg",
+      },
+      {
+        name: "Schizophrenia",
+        mentee: "Oh Rayaine & Oh Jonas",
+        mentor: "Kyla Sim & Cheang Jia Yuan",
+        url: "https://breaddo.github.io/",
+        thumbnail: "rayaine_jonas.jpg",
+      },
+      {
+        name: "Dementia",
+        mentee: "Ong Zhi Tong & Ong Brandon",
+        mentor: "Tan Jiaxin Chernise & Sathwik Chiluveru",
+        url: "https://brandonongyongzhi.github.io/landingpage.html",
+        thumbnail: "zhitong_brandon.jpg",
+      },
+      {
+        name: "Schizophrenia",
+        mentee: "Png Jian Xun & Pay Yu Jia",
+        mentor: "Abhay Rajesh Bagdawala & Celine Ng Si Lin",
+        url: "https://helliad.github.io/index",
+        thumbnail: "jianxun_yujia.jpg",
+      },
+      {
+        name: "Eating Disorders",
+        mentee: "Chan Ansley & Yim Arthur",
+        mentor: "Chia Wen Yan Hannah & Tan Sock Yong Sandra",
+        url: "ansleyyy.github.io",
+        thumbnail: "ansley_arthur.jpg",
+      },
+      {
+        name: "Eating Disorders",
+        mentee: "Tan Daven & Siah Jun Shen",
+        mentor: "Yeo Bao Jie & Low Jun Yi",
+        url: "https://daventann.github.io/Eating-Disorderss/home.html",
+        thumbnail: "daven_junshen.jpg",
+      },
+      {
+        name: "Bipolar Disorder",
+        mentee: "Tan Theophilus & Tam Marjorie",
+        mentor: "Lim Dai Wei & Chua Shin Yang Nicholas",
+        url: "https://limdw.github.io/info.html",
+        thumbnail: "theophilus_marjorie.jpg",
+      },
+      {
+        name: "Eating Disorders",
+        mentee: "Ang Wei Jie & Ten Yi Qian",
+        mentor: "Wong Kay Foong, Chester & Seet Yu Fei Isabelle",
+        url: "https://isabellestt.github.io/Project-Heartcode/home.html",
+        thumbnail: "weijie_yiqian.jpg",
+      },
+      {
+        name: "Eating Disorders",
+        mentee: "Thum Jing Tao & Wong Sui Qian",
+        mentor: "Tiara Maria Himawan & Kelvin Yap Jie En",
+        url: "https://kelvinyje.github.io/index.html",
+        thumbnail: "jingtao_suiqian.jpg",
+      },
+      {
+        name: "Sleep Disorders",
+        mentee: "Woo Johnathon & Tan Evan",
+        mentor: "Lynette Jean Tay & Gu YaoChen",
+        url: "https://enmvj1663.github.io/CanYouHelpMe/",
+        thumbnail: "johnathon_evan.jpg",
+      },
+    ],
+    photos: [
+      {
+        src: "/2022/Photos/1.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/2.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/3.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/4.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/5.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/6.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/7.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/8.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/9.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/10.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/11.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/12.jpg",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/13.jpg",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/14.jpg",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/15.jpg",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/16.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/17.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/18.jpg",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/19.jpg",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/20.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/21.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/22.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2022/Photos/23.jpg",
+        width: 4,
+        height: 2,
+      },
+    ],
+  },
   "2021": {
     description:
       "HeartCode 2021 was the fifth iteration of Project HeartCode led by Cheow Tian Le and Gan Shao Hong. Due to COVID-19, the run continued to remain virtual, focusing on the same segments as the previous year - Digital Content Creation and Web Development",

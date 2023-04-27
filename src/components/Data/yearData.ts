@@ -81,7 +81,7 @@ const yearData: YearMap = {
       {
         name: "Ng Yu Xin",
         role: "Events Director",
-        image: "yuxin.jpeg",
+        image: "yuxin.jpsg",
       },
     ],
     projects: [

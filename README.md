@@ -94,6 +94,6 @@ E.g.,
  
 _If you are unsure, feel free to refer to how it is done for the previous runs._
 
-yearData refers to the data on the actual run itself - under the /run/[year] page. The pages will be statically generated, so as long as you have a folder of the year, with the updated yearData accordingly, the page for the run will be created automatically.
+yearData refers to the data on the actual run itself - under the /run/[year] page. The pages will be statically generated, so as long as you have a folder of the year, with the updated yearData accordingly, the page for the run will be created automatically. Do note to use squared images so as to not have them look distorted on the website :)
 
 _Please feel free to pm the original owner [@seanisoverhere](https://t.me/seanisoverhere) if you require any assistance :)_

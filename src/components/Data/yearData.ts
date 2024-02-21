@@ -33,6 +33,256 @@ interface YearMap {
 }
 
 const yearData: YearMap = {
+  "2023": {
+    description:
+      "HeartCode 2023 goes back offline after 2 years! Project HeartCode 2023 was led by Zheng Ting and Yi Peng. This run was focused on web development training and education on mental health issues.",
+    beneficiaries: [
+      {
+        organisation: "Chinese Development Assistance Council (CDAC)",
+        image: "CDAC.png",
+      },
+    ],
+    orgComm: [
+      {
+        name: "Yue Zheng Ting",
+        role: "Project Lead",
+        image: "zt.jpg",
+      },
+      {
+        name: "Tan Yi Peng",
+        role: "Project Co-lead",
+        image: "yipeng.jpg",
+      },
+      {
+        name: "Lim Huei Ming",
+        role: "Trainer (Web Development)",
+        image: "hueiming.jpg",
+      },
+      {
+        name: "Sathwik Chiluveru",
+        role: "Trainer (Web Development)",
+        image: "sathwik.jpg",
+      },
+      {
+        name: "Nicole",
+        role: "Service Learning Director",
+        image: "nicole.jpg",
+      },
+      {
+        name: "Desiree Tan Li Yin",
+        role: "Marketing Director",
+        image: "desiree.jpg",
+      },
+      {
+        name: "Jerome Lim Pan Jie",
+        role: "Honory Finance Secretary",
+        image: "jerome.jpg",
+      },
+      {
+        name: "Milton Sim Yicong",
+        role: "Events Director",
+        image: "milton.jpg",
+      },
+    ],
+    projects: [
+      {
+        name: "2 Personalities",
+        mentee: "Koo Zhe Rui & Chew Zheng",
+        mentor: "Chia De Han & Maymunah Mohammad Zubair Rahman",
+        url: "https://joelchewzheng.github.io/joelchew00.github.io",
+        thumbnail: "zherui_chewzheng.jpg",
+      },
+      {
+        name: "CyberGuardian",
+        mentee: "Chan Yanzhong, Lee Xuan An Samuel",
+        mentor: "Chew Kar Weng & Brian,Alden Ng",
+        url: "https://heartcode.bchwy.com",
+        thumbnail: "yanzhong_samuel.jpg",
+      },
+      {
+        name: "Flaming",
+        mentee: "Pey Kai Qi Meredith & Oo Janie",
+        mentor: "Felicia Faustina Victoria Santoso & Balakrishnan Varshan",
+        url: "https://oo-janie.github.io/Project-Heartcode-2023/home.html",
+        thumbnail: "meredith_janie.jpg",
+      },
+      {
+        name: "Bringing awareness",
+        mentee: "Chan Zi Rong & Hong Hanyang Caden",
+        mentor: "Ashley Tan & Chew Qian Yun",
+        url: "https://shinkeishi.github.io/Project-Heartcode-2023/website/",
+        thumbnail: "zirong_caden.jpg",
+      },
+      {
+        name: "#StopTheTroll,ThatsTheGoal",
+        mentee: "Jing Guang S/O Jadakatullah &  Daryl Tee",
+        mentor: "Marco & Song Ji Hoon",
+        url: "https://jg5407.github.io/HeartCode2023/page1.html",
+        thumbnail: "jingguang_daryl.jpg",
+      },
+      {
+        name: "Digital Guardians",
+        mentee: "Emmanuel Eng & Chong Yue Min",
+        mentor: "Franky & Ooi Jing Kai",
+        url: "https://5mmanuel.github.io/",
+        thumbnail: "emmanuel_yuemin.jpg",
+      },
+      {
+        name: "Cyberbullying : Flaming",
+        mentee: "Abdul Masyhur Deo Bin Dzulkarnaen & Tin Xian Liang",
+        mentor: "Syahmim Chukhan Bin Shamsudin & Loh Yee Xun Gabriel",
+        url: "https://ttinten.github.io/Project-Heartcode/index.html",
+        thumbnail: "masyhur_xianliang.jpg",
+      },
+      {
+        name: "Cyberbullying: Flaming",
+        mentee: "Lim Jia Hui & Eng Wei En",
+        mentor: "Goh En Liang John & Goh Si Ying Isabelle",
+        url: "https://8y6cpu.github.io/Cyberbullying-Flaming/",
+        thumbnail: "jiahui_weien.jpg",
+      },
+      {
+        name: "FlameBusters",
+        mentee: "Heng Song Wei & Yeo Engxin",
+        mentor: "Muhammad Syahmi Bin Abbas & Chang Hao Ming",
+        url: "https://swh3ng.github.io/",
+        thumbnail: "songwei_engxin.jpg",
+      },
+      {
+        name: "What is Cyber Bullying?",
+        mentee: "Bernice Chee Xin Yee & Lai Jing Xi Caleb",
+        mentor: "Muhammad Ashraff Bin Samsuddin & Lucerne Loke",
+        url: "https://bercxy.github.io/",
+        thumbnail: "bernice_caleb.jpg",
+      },
+      {
+        name: "Flame-Proofing the Internet",
+        mentee: "Lee Hui Xing & Wang Qi Xuan",
+        mentor: "Tjong Jia Ning & Vadlamudi Saisindhu",
+        url: "https://xau012617.github.io/HeartCode2023/",
+        thumbnail: "huixing_qixuan.jpg",
+      },
+      {
+        name: "Cyberbullying",
+        mentee: "Alyssa Lim Xin Yi & Zhu Huixin",
+        mentor: "Leong An Yu & Koh Yee Cheng",
+        url: "https://yeeechenggg.github.io/Project-Heartcode-group-16/landingPage.html",
+        thumbnail: "alyssa_huixin.jpg",
+      },
+      {
+        name: "Cyberbullying",
+        mentee: "Jezreel Ng Khim Thim & Wong Zi Hang Gordon",
+        mentor: "Teo Kuang Yi, Louis & Yap Feng Cheng",
+        url: "https://jelax70.github.io/new",
+        thumbnail: "jezreel_gordon.jpg",
+      },
+      {
+        name: "CYBERBULLYING; FLAMING.",
+        mentee: "Tan Ying Xuan Angelina & Natasha Leong Mun Yu",
+        mentor: "Wong En Ting Kelyn & Valdez Francis Gabriel Manalo",
+        url: "https://kelynwong.github.io/heartcode2023/",
+        thumbnail: "angelina_natasha.jpg",
+      },
+      {
+        name: "Stop Deepfakes",
+        mentee: "Jordan Tan Qi Shen & Tay Rui Hong Randall",
+        mentor: "Teoh Jing Xiang",
+        url: "https://jaydenteoh.github.io/heartcode-2023/",
+        thumbnail: "jordan_randall.jpg",
+      },
+      {
+        name: "Stop cyberbullying",
+        mentee: "Fong Zi Jun & Ke Yong Lin",
+        mentor: "Goh Ray Jiet & Felicia Paulus",
+        url: "https://werewolfrobolox.github.io/website",
+        thumbnail: "zijun_yonglin.jpg",
+      },
+      {
+        name: "Outing and Trickery",
+        mentee: "Neo Jek Ting Jesslyn, Fong Zi Xin, Bond Ong Jing Xiang",
+        mentor: "Ryan Justin Conceicao & Koh Sheng Wei",
+        url: "https://tom-and-jerry-heartcode.vercel.app/",
+        thumbnail: "jesslyn_jingxiang.jpg",
+      },
+    ],
+    photos: [
+      {
+        src: "/2023/Photos/1.jpg",
+        width: 5,
+        height: 1,
+      },
+      {
+        src: "/2023/Photos/2.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2023/Photos/3.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2023/Photos/4.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2023/Photos/5.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2023/Photos/6.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2023/Photos/7.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2023/Photos/8.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2023/Photos/9.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2023/Photos/10.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2023/Photos/11.jpg",
+        width: 4,
+        height: 2,
+      },
+      {
+        src: "/2023/Photos/12.jpg",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2023/Photos/13.jpg",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2023/Photos/14.jpg",
+        width: 5,
+        height: 2,
+      },
+      {
+        src: "/2023/Photos/15.jpg",
+        width: 4,
+        height: 1,
+      }
+    ],
+  },
   "2022": {
     description:
       "HeartCode 2022 goes back offline after 2 years! Project HeartCode 2022 was led by Euodia Tan and Goh Jia En. This run was focused on web development training and education on mental health issues.",
@@ -264,7 +514,7 @@ const yearData: YearMap = {
         height: 2,
       },
       {
-        src: "/2022/Photos/11.jpg",
+        src: "/2022/Photos/15.jpg",
         width: 4,
         height: 2,
       },
@@ -284,7 +534,7 @@ const yearData: YearMap = {
         height: 2,
       },
       {
-        src: "/2022/Photos/15.jpg",
+        src: "/2022/Photos/11.jpg",
         width: 5,
         height: 2,
       },
@@ -1080,52 +1330,52 @@ const yearData: YearMap = {
     ],
     photos: [
       {
-        src: "/2019/Photos/1.JPG",
+        src: "/2019/Photos/1.jpg",
         width: 4,
         height: 2,
       },
       {
-        src: "/2019/Photos/2.JPG",
+        src: "/2019/Photos/2.jpg",
         width: 4,
         height: 2,
       },
       {
-        src: "/2019/Photos/3.JPG",
+        src: "/2019/Photos/3.jpg",
         width: 3,
         height: 2,
       },
       {
-        src: "/2019/Photos/4.JPG",
+        src: "/2019/Photos/4.jpg",
         width: 3,
         height: 2,
       },
       {
-        src: "/2019/Photos/5.JPG",
+        src: "/2019/Photos/5.jpg",
         width: 3,
         height: 2,
       },
       {
-        src: "/2019/Photos/6.JPG",
+        src: "/2019/Photos/6.jpg",
         width: 3,
         height: 2,
       },
       {
-        src: "/2019/Photos/7.JPG",
+        src: "/2019/Photos/7.jpg",
         width: 3,
         height: 2,
       },
       {
-        src: "/2019/Photos/8.JPG",
+        src: "/2019/Photos/8.jpg",
         width: 3,
         height: 2,
       },
       {
-        src: "/2019/Photos/9.JPG",
+        src: "/2019/Photos/9.jpg",
         width: 3,
         height: 2,
       },
       {
-        src: "/2019/Photos/10.JPG",
+        src: "/2019/Photos/10.jpg",
         width: 3,
         height: 2,
       },

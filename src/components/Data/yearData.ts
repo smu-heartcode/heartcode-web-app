@@ -35,7 +35,7 @@ interface YearMap {
 const yearData: YearMap = {
   "2023": {
     description:
-      "HeartCode 2023 goes back offline after 2 years! Project HeartCode 2023 was led by Zheng Ting and Yi Peng. This run was focused on web development training and education on mental health issues.",
+      "HeartCode 2023 is back for a consecutive 7th iteration! Project HeartCode 2023 was led by Zheng Ting and Yi Peng. This run was focused on web development training and education on cyberbullying.",
     beneficiaries: [
       {
         organisation: "Chinese Development Assistance Council (CDAC)",

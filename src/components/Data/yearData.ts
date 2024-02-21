@@ -64,7 +64,7 @@ const yearData: YearMap = {
         image: "sathwik.jpg",
       },
       {
-        name: "Nicole",
+        name: "Nicole Michaella Cuneta Daduya",
         role: "Service Learning Director",
         image: "nicole.jpg",
       },

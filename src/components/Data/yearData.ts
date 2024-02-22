@@ -45,12 +45,12 @@ const yearData: YearMap = {
     orgComm: [
       {
         name: "Yue Zheng Ting",
-        role: "Project Lead",
+        role: "President",
         image: "zt.jpg",
       },
       {
         name: "Tan Yi Peng",
-        role: "Project Co-lead",
+        role: "Vice President",
         image: "yipeng.jpg",
       },
       {

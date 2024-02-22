@@ -121,6 +121,13 @@ const yearData: YearMap = {
         thumbnail: "jingguang_daryl.jpg",
       },
       {
+        name: "Stop Cyberbullying!",
+        mentee: "Celine Then Shi En & Gerald Tan Jiaye",
+        mentor: "Liow Hong Xiang & Tan Zu Yi Joey",
+        url: "https://hx240.github.io/urbanTrackers/",
+        thumbnail: "celine_gerald.jpg",
+      },
+      {
         name: "Digital Guardians",
         mentee: "Emmanuel Eng & Chong Yue Min",
         mentor: "Franky & Ooi Jing Kai",

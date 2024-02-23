@@ -22,7 +22,7 @@ jobs:
           environment: Production
       - name: Trigger Webhook
         run: |
-          WEBHOOK_URL="https://ellipsis.scis.smu.edu.sg/4e0f201f32f5/ellipsishook"
+          WEBHOOK_URL="https://ellipsis.scis.smu.edu.sg/4e0f201f32f5/heartcodehook"
 
           PAYLOAD='{"commitId": "${{ github.event.head_commit.id }}"}'
 

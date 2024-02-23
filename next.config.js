@@ -11,4 +11,7 @@ module.exports = {
     return config;
   },
   reactStrictMode: true,
+  serverRuntimeConfig: {
+    compress: false,
+  },
 };

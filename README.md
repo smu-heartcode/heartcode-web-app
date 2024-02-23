@@ -91,6 +91,13 @@ E.g.,
  ┣ 📜Photos
  ┗ 📜Project
  ```
+
+## Deployment
+In order to deploy your changes to production, include "Deploy" as the head of your commit message when pushing to `main` branch, e.g.
+```
+git commit "Deploy: Add Heartcode 2023 run"
+```
+
  
 _If you are unsure, feel free to refer to how it is done for the previous runs._
 

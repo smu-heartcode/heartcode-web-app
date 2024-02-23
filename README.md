@@ -92,8 +92,11 @@ E.g.,
  ┗ 📜Project
  ```
 
+## Repository access
+Please reach out to the previous run's trainer to access this repository.
+
 ## Deployment
-In order to deploy your changes to production, include "Deploy" as the head of your commit message when pushing to `main` branch, e.g.
+In order to deploy your changes to production, include "Deploy" at the beginning of your commit message when pushing to `main` branch, e.g.
 ```
 git commit "Deploy: Add Heartcode 2023 run"
 ```

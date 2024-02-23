@@ -1,0 +1,57 @@
+name: Production Deployment
+on:
+  push:
+    branches:
+      - main
+permissions: write-all
+jobs:
+  Deploy-Production:
+    if: ${{ startsWith(github.event.head_commit.message, 'Deploy') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: latest
+          cache: npm
+      - uses: chrnorm/deployment-action@v2
+        name: Create GitHub deployment
+        id: deployment
+        with:
+          token: "${{ github.token }}"
+          environment: Production
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Build Project Artifacts
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Trigger Webhook
+        run: |
+          WEBHOOK_URL="https://ellipsis.scis.smu.edu.sg/4e0f201f32f5/ellipsishook"
+
+          PAYLOAD='{"commitId": "${{ github.event.head_commit.id }}"}'
+
+          SIGNATURE=$(echo -n "$PAYLOAD" | openssl dgst -sha1 -hmac "${{secrets.WEBHOOK_SECRET}}" | awk '{print $2}')
+
+          curl -X POST "$WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -H "X-Hub-Signature: sha1=$SIGNATURE" \
+            -d "$PAYLOAD"
+      - name: Update deployment status (success)
+        if: success()
+        uses: chrnorm/deployment-status@v2
+        with:
+          token: "${{ github.token }}"
+          environment-url: "https://ellipsis.scis.smu.edu.sg"
+          log-url: ${{ steps.deployment.outputs.environment_url }}
+          deployment-id: ${{ steps.deployment.outputs.deployment_id }}
+          state: "success"
+      - name: Update deployment status (failure)
+        if: failure()
+        uses: chrnorm/deployment-status@v2
+        with:
+          token: "${{ github.token }}"
+          log-url: ${{ steps.deployment.outputs.environment_url }}
+          deployment-id: ${{ steps.deployment.outputs.deployment_id }}
+          state: "failure"

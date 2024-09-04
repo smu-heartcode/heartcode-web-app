@@ -29,13 +29,6 @@ const links = [
     icon: <RiArticleFill size={25} />,
     color: "yellow"
   },
-  {
-    id: 4,
-    name: "Training",
-    to: "https://projectheartcode.codes/",
-    icon: <IoMdSchool size={25} />,
-    color: "purple"
-  },
 ];
 
 const years = Object.keys(yearData).reverse();

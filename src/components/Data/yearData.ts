@@ -33,6 +33,190 @@ interface YearMap {
 }
 
 const yearData: YearMap = {
+  "2024": {
+    description: "Another year, another run of HeartCode! Project HeartCode 2024 was led by Yap Feng Cheng and Phoebe Neo Yi Ting. This run was focused on web development training and education on the effects of drug abuse.",
+    beneficiaries: [
+      {
+        organisation: "Chinese Development Assistance Council (CDAC)",
+        image: "CDAC.png",
+      },
+    ],
+    orgComm: [
+      {
+        name: "Yap Feng Cheng",
+        role: "Co-Lead",
+        image: "TBC.jpg",
+      },
+      {
+        name: "Phoebe Neo Yi Ting",
+        role: "Co-Lead",
+        image: "TBC.jpg",
+      },
+      {
+        name: "Hnin Thanda Kyaw",
+        role: "Finance Director",
+        image: "TBC.jpg",
+      },
+      {
+        name: "Maymunah Mohammad Zubair Rahman",
+        role: "Service Learning Director",
+        image: "Maymunah.png",
+      },
+      {
+        name: "Nicholas Ong Zheng Kai",
+        role: "Trainer (Web Development)",
+        image: "TBC.jpg",
+      },
+      {
+        name: "Dylan Chen Zhi",
+        role: "Trainer (Web Development)",
+        image: "TBC.jpg",
+      },
+      {
+        name: "Sunkari Saraswati Neeharika",
+        role: "Marketing Director",
+        image: "TBC.jpg",
+      },
+
+    ],
+
+    projects: [
+      {
+          name: "",
+          mentor: "Soh De Lin Nicholas & Aaliya Navas & Kirubakaran Kishore",
+          mentee: "Lim Yong Jun & Pang Jing Qi",
+          url: "https://heartcode-mentee-gamma.vercel.app/",
+          thumbnail: "group1.png",
+      },
+      {
+          name: "",
+          mentor: "Ong Kenith & Cai Jiaxu & Lee Jia E, Jeanette (Riley)",
+          mentee: "Rykerdamon Zephyr Sim & Claire Wee Xin Yue",
+          url: "https://heartcode-mentee.vercel.app/",
+          thumbnail: "group2.png",
+      },
+      {
+          name: "",
+          mentor: "Curteis Yang Feng Rui & Azad Afra Begum & Bradley Goh Jun Rui",
+          mentee: "Ong Zhi Lei Jared & Oh Jun Kai",
+          url: "https://junkai-heartcode.vercel.app/",
+          thumbnail: "group3.png",
+      },
+      {
+          name: "",
+          mentor: "Minn Ong & Joshua David Ang Chun Xiong & Joshua Lim Quan Xin",
+          mentee: "Xavier Chua Qi Yuan",
+          url: "https://xavier-c.vercel.app",
+          thumbnail: "group4.png",
+      },
+      {
+          name: "",
+          mentor: "Wong Sze Kai Ernest & Tan Owen & Hang Zhengyang",
+          mentee: "Yeo Teck Seng & Sean Etienne Ng Cher-Yu",
+          url: "https://heartcodegroup5drugs.vercel.app/",
+          thumbnail: "group5.png",
+      },
+      {
+          name: "",
+          mentor: "Keira Ashley Kusbiyantoro & Zane Chee Jun Yi & Lim Jin Kai",
+          mentee: "Vania Wei Yuxuan & Joelys Wee Kerrin",
+          url: "https://project-heartcode-alpha.vercel.app/",
+          thumbnail: "group6.png",
+      },
+      {
+          name: "",
+          mentor: "Tai Wei Sin & Sheryn Leong Sze Xuan & Ng Yong Soon",
+          mentee: "Lucas Lee Wei Jun & Julian Tin Wei Long",
+          url: "https://heartcode-group-7.vercel.app/",
+          thumbnail: "group7.png",
+      },
+      {
+          name: "",
+          mentor: "Alson Sim Wei Jie & Jared Yeo & Tai Fu Hong Zachary",
+          mentee: "Soh Wan Ting & Chia Jin Cai",
+          url: "https://heartcode-mentee-8.vercel.app/",
+          thumbnail: "group8.png",
+      },
+      {
+          name: "",
+          mentor: "Ho Min Han & Joanne Sin Shu Jing & Wee Yu Feng Keane",
+          mentee: "Ng Wei Cong & Quek Zhi Ying",
+          url: "https://heartcode-ten.vercel.app/",
+          thumbnail: "group9.png",
+      },
+      {
+          name: "",
+          mentor: "Isaac Ang Tze Ee & Brennan Toh & Preston Ang Hao Yang",
+          mentee: "Dylan Tan Jia Jun & Ng Shiloh",
+          url: "https://project-heartcode-xi.vercel.app/",
+          thumbnail: "group10.png",
+      },
+      {
+          name: "",
+          mentor: "Wong Jia Xin & Lee Yan Han & Lee Chee Fong Ryan",
+          mentee: "Neo Junci Megan & Cheyenne Teo",
+          url: "https://heartcode-2024.vercel.app/",
+          thumbnail: "group11.png",
+      },
+      {
+          name: "",
+          mentor: "Ivyn Yak & Javen Tan",
+          mentee: "Wong Yu Ting & Ian Jayden Ng Sheng Jie",
+          url: "https://smuwebdev.vercel.app/",
+          thumbnail: "group12.png",
+      },
+      {
+          name: "",
+          mentor: "Ernest Ng Chen Yi & Jeremiah Toh Rabino",
+          mentee: "Eva Low Siok Hsin & Damien Aw Yuan Zhi",
+          url: "https://heartcode-mentee-sooty.vercel.app/",
+          thumbnail: "group13.png",
+      },
+      {
+          name: "",
+          mentor: "Dylan Matthew Tan Jun & Jessica Hoi Fann Ling",
+          mentee: "Cheung Tian Sen & Nur Basheera Binte Mohammed Adil",
+          url: "https://project-heartcode-boilerplate-five.vercel.app/",
+          thumbnail: "group14.png",
+      },
+      {
+          name: "",
+          mentor: "Koh Wen Bao & Lim Yi Heng Ryan",
+          mentee: "Lim Yee Xian & Khoo Kang Zhe, Eugene",
+          url: "https://heartcode-grp15.vercel.app/",
+          thumbnail: "group15.png",
+      },
+      {
+          name: "",
+          mentor: "Wong Jian Xuan, Damon & Sheryl Chan Swee Yann",
+          mentee: "See Leng Xiu Yi Issac",
+          url: "https://heartcode-proj-damon-wongs-projects.vercel.app/",
+          thumbnail: "group16.png",
+      },
+      {
+          name: "",
+          mentor: "Jasper Teng Zi Le & Gordon Lim",
+          mentee: "Tay Yu Hong & Nur Batrisyia Binte Mohammed Adil",
+          url: "https://heartcode-real-git-temp-jaspertengs-projects.vercel.app/",
+          thumbnail: "group17.png",
+      },
+      {
+          name: "",
+          mentor: "Zenia Foo Kai Qi & Nathan Jefferson Hart",
+          mentee: "Ryan Tan Chuan En & Tan Xiu Min Valerie",
+          url: "https://ryan-heartcode.vercel.app/ ",
+          thumbnail: "group18.png",
+      }
+  ],
+    photos: [
+      {
+        src: "/2024/photos/OC.jpg",
+        width: 3,
+        height: 4,
+      },
+    ],
+
+  },
   "2023": {
     description:
       "HeartCode 2023 is back for a consecutive 7th iteration! Project HeartCode 2023 was led by Zheng Ting and Yi Peng. This run was focused on web development training and education on cyberbullying.",

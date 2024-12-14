@@ -127,7 +127,7 @@ const yearData: YearMap = {
           name: "",
           mentor: "Tai Wei Sin & Sheryn Leong Sze Xuan & Ng Yong Soon",
           mentee: "Lucas Lee Wei Jun & Julian Tin Wei Long",
-          url: "https://heartcode-group-7.vercel.app/",
+          url: "https://heartcode-group-7-peach.vercel.app",
           thumbnail: "group7.png",
       },
       {

@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  experimental: {
-    outputStandalone: true,
-  },
+  output : 'standalone'
+  ,
   webpack(config) {
     config.resolve.fallback = {
       ...config.resolve.fallback, 

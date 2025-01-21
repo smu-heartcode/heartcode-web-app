@@ -97,7 +97,7 @@ const Menu: React.FC = () => {
               <motion.div
                 key={id}
                 variants={itemVariants}
-                className={`hover:bg-${color}-200 transform duration-200 ease-in-out h-12 flex items-center justify-center`}
+                className={`hover:bg-${color}-200 transform duration-200 ease-in-out h-12 flex items-center justify-start`}
               >
                 <Link href={to} passHref>
                   <div
@@ -119,7 +119,7 @@ const Menu: React.FC = () => {
               <motion.div
                 key={year}
                 variants={itemVariants}
-                className={`hover:bg-blue-200 transform duration-200 ease-in-out h-12 flex items-center justify-center`}
+                className={`hover:bg-blue-200 transform duration-200 ease-in-out h-12 flex items-center justify-start`}
               >
                 <Link href={`/runs/${year}`} passHref>
                   <div

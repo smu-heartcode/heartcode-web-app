@@ -45,37 +45,37 @@ const yearData: YearMap = {
       {
         name: "Yap Feng Cheng",
         role: "Lead",
-        image: "feng_cheng.JPG",
+        image: "feng_cheng.png",
       },
       {
         name: "Phoebe Neo Yi Ting",
         role: "Co-Lead",
-        image: "TBC.jpg",
+        image: "phoebe.png",
       },
       {
         name: "Hnin Thanda Kyaw",
         role: "Finance Director",
-        image: "TBC.jpg",
+        image: "hnin.png",
       },
       {
         name: "Maymunah Mohammad Zubair Rahman",
         role: "Service Learning Director",
-        image: "Maymunah.png",
+        image: "maymunah.png",
       },
       {
         name: "Nicholas Ong Zheng Kai",
         role: "Trainer (Web Development)",
-        image: "TBC.jpg",
+        image: "nicholas.png",
       },
       {
         name: "Dylan Chen Zhi",
         role: "Trainer (Web Development)",
-        image: "TBC.jpg",
+        image: "dylan.png",
       },
       {
         name: "Sunkari Saraswati Neeharika",
         role: "Marketing Director",
-        image: "TBC.jpg",
+        image: "neeharika.png",
       },
 
     ],
@@ -210,10 +210,70 @@ const yearData: YearMap = {
   ],
     photos: [
       {
-        src: "/2024/photos/OC.jpg",
-        width: 3,
-        height: 4,
+        src: "/2024/photos/OC.png",
+        width: 4,
+        height: 3,
       },
+      {
+        src : "/2024/photos/mass.png",
+        width : 4000,
+        height : 2667, 
+      },
+      {
+        src : "/2024/photos/1st.png",
+        width : 4000,
+        height : 2667, 
+      },
+      {
+        src : "/2024/photos/2nd.png",
+        width : 3213,
+        height : 3600, 
+      },
+      {
+        src : "/2024/photos/3rd.png",
+        width : 2832,
+        height : 3639, 
+      },
+      {
+        src : "/2024/photos/1.png",
+        width : 4000,
+        height : 2667, 
+      },
+      {
+        src : "/2024/photos/2.png",
+        width : 4000,
+        height : 2667, 
+      },
+      {
+        src : "/2024/photos/3.png",
+        width : 4000,
+        height : 2667, 
+      },
+      {
+        src : "/2024/photos/4.png",
+        width : 4000,
+        height : 2667, 
+      },
+      {
+        src : "/2024/photos/5.png",
+        width : 4000,
+        height : 2667, 
+      },
+      {
+        src : "/2024/photos/6.png",
+        width : 4000,
+        height : 2667, 
+      },
+      {
+        src : "/2024/photos/7.png",
+        width : 4000,
+        height : 2667, 
+      },
+      {
+        src : "/2024/photos/8.png",
+        width : 4000,
+        height : 2667, 
+      }
     ],
 
   },

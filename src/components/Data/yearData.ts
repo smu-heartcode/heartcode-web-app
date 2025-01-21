@@ -210,67 +210,67 @@ const yearData: YearMap = {
   ],
     photos: [
       {
-        src: "/2024/photos/OC.png",
+        src: "/2024/Photos/OC.png",
         width: 4,
         height: 3,
       },
       {
-        src : "/2024/photos/mass.png",
+        src : "/2024/Photos/mass.png",
         width : 4000,
         height : 2667, 
       },
       {
-        src : "/2024/photos/1st.png",
+        src : "/2024/Photos/1st.png",
         width : 4000,
         height : 2667, 
       },
       {
-        src : "/2024/photos/2nd.png",
+        src : "/2024/Photos/2nd.png",
         width : 3213,
         height : 3600, 
       },
       {
-        src : "/2024/photos/3rd.png",
+        src : "/2024/Photos/3rd.png",
         width : 2832,
         height : 3639, 
       },
       {
-        src : "/2024/photos/1.png",
+        src : "/2024/Photos/1.png",
         width : 4000,
         height : 2667, 
       },
       {
-        src : "/2024/photos/2.png",
+        src : "/2024/Photos/2.png",
         width : 4000,
         height : 2667, 
       },
       {
-        src : "/2024/photos/3.png",
+        src : "/2024/Photos/3.png",
         width : 4000,
         height : 2667, 
       },
       {
-        src : "/2024/photos/4.png",
+        src : "/2024/Photos/4.png",
         width : 4000,
         height : 2667, 
       },
       {
-        src : "/2024/photos/5.png",
+        src : "/2024/Photos/5.png",
         width : 4000,
         height : 2667, 
       },
       {
-        src : "/2024/photos/6.png",
+        src : "/2024/Photos/6.png",
         width : 4000,
         height : 2667, 
       },
       {
-        src : "/2024/photos/7.png",
+        src : "/2024/Photos/7.png",
         width : 4000,
         height : 2667, 
       },
       {
-        src : "/2024/photos/8.png",
+        src : "/2024/Photos/8.png",
         width : 4000,
         height : 2667,
       }

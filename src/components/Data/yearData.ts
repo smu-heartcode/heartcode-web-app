@@ -272,7 +272,7 @@ const yearData: YearMap = {
       {
         src : "/2024/photos/8.png",
         width : 4000,
-        height : 2667, 
+        height : 2667,
       }
     ],
 

@@ -3,12 +3,11 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 permissions: write-all
 jobs:
   Deploy-Production:
-    if: ${{ github.event_name == 'workflow_dispatch' || startsWith(github.event.head_commit.message, 'Deploy') }}
+    if: ${{ startsWith(github.event.head_commit.message, 'Deploy') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
